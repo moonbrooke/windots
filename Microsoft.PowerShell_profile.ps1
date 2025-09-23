@@ -110,6 +110,16 @@ function winutil {
     irm "https://christitus.com/win" | iex
 }
 
+# function Link-PwshProfile {
+#     $linkPath = Join-Path $env:USERPROFILE "Documents\PowerShell\Microsoft.PowerShell_profile.p1"
+#     $targetPath = "C:\GitHub\windots\Microsoft.PowerShell_profile.p1"
+#
+#     New-Item -ItemType SymbolicLink `
+#              -Path $linkPath `
+#              -Target $targetPath
+# }
+# Set-Alias pwshlink Link-PwshProfile
+
 # ffmpeg
 function Ffmpeg-AudioToMP3 {
     param (
