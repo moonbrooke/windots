@@ -155,7 +155,11 @@ Set-Alias convertmp3 Ffmpeg-AudioToMP3
 function Ffmpeg-VideoToH265 {
     param (
         [Parameter(Mandatory)]
-        [string]$InputFile
+        [string]$InputFile,
+
+        [string]$MinBitrate = "8000k",
+
+        [string]$MaxBitrate = "12000k"
     )
 
     $BaseName = [System.IO.Path]::GetFileNameWithoutExtension($InputFile)
@@ -164,9 +168,11 @@ function Ffmpeg-VideoToH265 {
 
     ffmpeg -i $InputFile `
            -c:v hevc_nvenc `
-           -preset medium `
+           -preset p5 `
            -pix_fmt yuv420p `
-           -c:a copy `
+           -b:v $MinBitrate `
+           -maxrate $MaxBitrate `
+           -c:a aac `
            $OutputFile
 }
 Set-Alias convertmp4 Ffmpeg-VideoToH265
