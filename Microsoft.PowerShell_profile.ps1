@@ -70,6 +70,14 @@ function scd {
 }
 
 # git
+function cdgit {
+    cd "C:\GitHub\"
+}
+
+function windots {
+    cd "C:\GitHub\windots\"
+}
+
 function gs {
     git status
 }
@@ -84,7 +92,7 @@ function gp {
 
 # Teldrive
 function tdr {
-    teldrive run -c C:\Users\farpras\.installer\bin\config.toml
+    teldrive run -c "$env:USERPROFILE\.installer\bin\config.toml"
 }
 
 # Warp CLI
@@ -101,8 +109,8 @@ Set-Alias msk musikcube
 
 function Link-MusikcubeTheme {
     New-Item -ItemType SymbolicLink `
-      -Path "C:\Users\farpras\scoop\apps\musikcube\current\themes\catppuccin_mocha.json" `
-      -Target "C:\Users\farpras\.config\musikcube\catppuccin_mocha.json"
+      -Path "$env:USERPROFILE\scoop\apps\musikcube\current\themes\catppuccin_mocha.json" `
+      -Target "$env:USERPROFILE\.config\musikcube\catppuccin_mocha.json"
 }
 Set-Alias mskt Link-MusikcubeTheme
 
