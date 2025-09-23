@@ -111,8 +111,8 @@ function winutil {
 }
 
 # function Link-PwshProfile {
-#     $linkPath = Join-Path $env:USERPROFILE "Documents\PowerShell\Microsoft.PowerShell_profile.p1"
-#     $targetPath = "C:\GitHub\windots\Microsoft.PowerShell_profile.p1"
+#     $linkPath = Join-Path $env:USERPROFILE "Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
+#     $targetPath = "C:\GitHub\windots\Microsoft.PowerShell_profile.ps1"
 #
 #     New-Item -ItemType SymbolicLink `
 #              -Path $linkPath `
