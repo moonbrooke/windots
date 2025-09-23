@@ -6,6 +6,7 @@ Import-Module -Name Terminal-Icons
 . "$env:USERPROFILE\Documents\PowerShell\Ffmpeg.ps1"
 . "$env:USERPROFILE\Documents\PowerShell\Scoop.ps1"
 . "$env:USERPROFILE\Documents\PowerShell\Misc.ps1"
+. "$env:USERPROFILE\Documents\PowerShell\Youtube.ps1"
 
 # ALIAS
 Set-Alias c Clear-Host

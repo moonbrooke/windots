@@ -19,9 +19,13 @@ set "TARGET5=C:\GitHub\windots\Scoop.ps1"
 set "LINK6=%USERPROFILE%\Documents\PowerShell\Misc.ps1"
 set "TARGET6=C:\GitHub\windots\Misc.ps1"
 
+set "LINK7=%USERPROFILE%\Documents\PowerShell\Youtube.ps1"
+set "TARGET7=C:\GitHub\windots\Youtube.ps1"
+
 mklink "%LINK1%" "%TARGET1%"
 mklink "%LINK2%" "%TARGET2%"
 mklink "%LINK3%" "%TARGET3%"
 mklink "%LINK4%" "%TARGET4%"
 mklink "%LINK5%" "%TARGET5%"
 mklink "%LINK6%" "%TARGET6%"
+mklink "%LINK7%" "%TARGET7%"
