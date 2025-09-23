@@ -1,5 +1,8 @@
 Import-Module -Name Terminal-Icons
 
+# Import Env. Variables
+. "$env:USERPROFILE\Documents\PowerShell\Environment_Variables.ps1"
+
 # ALIAS
 Set-Alias c Clear-Host
 
@@ -71,11 +74,11 @@ function scd {
 
 # git
 function cdgit {
-    cd "C:\GitHub\"
+    cd "$env:GITHUB"
 }
 
 function windots {
-    cd "C:\GitHub\windots\"
+    cd "$env:WINDOTS"
 }
 
 function gs {
