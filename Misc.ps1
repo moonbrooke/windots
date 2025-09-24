@@ -42,4 +42,4 @@ function Translate-Word {
     $response = Invoke-RestMethod -Uri $url -Method Get
     $response[0].meanings[0].definitions[0].definition
 }
-Set-Alias tsl Translate-Word
+Set-Alias dict Translate-Word
