@@ -28,3 +28,5 @@ function gp {
     git push
 }
 
+# Other dev tools
+Set-Alias cat bat
