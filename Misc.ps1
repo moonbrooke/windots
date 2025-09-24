@@ -36,10 +36,10 @@ function winutil {
 # }
 # Set-Alias pwshlink Link-PwshProfile
 
-function Translate-Word {
+function Dictionary {
     param([string]$Word)
     $url = "https://api.dictionaryapi.dev/api/v2/entries/en/$Word"
     $response = Invoke-RestMethod -Uri $url -Method Get
     $response[0].meanings[0].definitions[0].definition
 }
-Set-Alias dict Translate-Word
+Set-Alias dict Dictionary
