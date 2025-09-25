@@ -1,0 +1,46 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Customize the prompt symbol
+[character]
+success_symbol = "[\\$](bold green)"
+error_symbol = "[\\$](bold red)"
+
+# Show the current directory
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold cyan"
+
+# Show Git branch info
+[git_branch]
+symbol = " "
+style = "purple"
+
+# Show Git status
+[git_status]
+style = "red"
+
+# Show Node.js version if in a Node project
+[nodejs]
+symbol = "⬢ "
+style = "bold green"
+
+# Show Rust version if in a Rust project
+[rust]
+symbol = "🦀 "
+style = "bold red"
+
+# Show Python version if in a Python project
+[python]
+symbol = "🐍 "
+style = "yellow"
+
+# Show command duration if it exceeds a threshold
+[cmd_duration]
+min_time = 2000
+style = "yellow"
+
+# Show the time
+[time]
+disabled = true
