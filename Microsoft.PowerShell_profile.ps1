@@ -10,6 +10,7 @@ Import-Module -Name Terminal-Icons
 
 # ALIAS
 Set-Alias c Clear-Host
+Set-Alias stow "$PSScriptRoot\Stow.ps1"
 
 # PUT AT THE END
 Invoke-Expression (&starship init powershell)
