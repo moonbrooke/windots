@@ -1,0 +1,11 @@
+{
+  "workbench.startupEditor": "none",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "CaskaydiaCove Nerd Font",
+  "breadcrumbs.enabled": false,
+  "workbench.editor.showTabs": "single"
+}
