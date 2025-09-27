@@ -20,12 +20,28 @@ function gs {
     git status
 }
 
+function ga {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$Path
+    )
+    git add "$Path"
+}
+
 function gaa {
     git add *
 }
 
 function gp {
     git push
+}
+
+function gcms {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$Message
+    )
+    git commit -m "$Message"
 }
 
 # Other dev tools
