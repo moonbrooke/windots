@@ -1,0 +1,69 @@
+set nocompatible
+set number
+set termguicolors
+
+filetype plugin indent on
+
+syntax on
+
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set smartindent
+set backspace=indent,eol,start
+
+set scrolloff=10
+set nowrap
+set ve+=onemore
+
+set incsearch
+set ignorecase
+set smartcase
+
+set showcmd
+set showmode
+set showmatch
+
+set hlsearch
+set history=1000
+
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+call plug#begin()
+
+" List your plugins here
+Plug 'tpope/vim-sensible'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+Plug 'itchyny/lightline.vim'
+
+call plug#end()
+
+colorscheme catppuccin_mocha
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
+
+set laststatus=2
+
+" Keymaps
+let mapleader = " "
+
+nnoremap <C-s> :w<cr>
+nnoremap \ :Ex<cr>
+
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fo :History<CR>
+nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>fq :CList<CR>
+nnoremap <leader>fh :Helptags<CR>
+
+nnoremap <leader>fs :Rg <C-r><C-w><CR>
+nnoremap <leader>fg :Rg<Space>
+nnoremap <leader>fc :execute 'Rg ' . expand('%:t:r')<CR>
+
+nnoremap <leader>fi :Files C:/GitHub/windots<CR>
