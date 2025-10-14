@@ -1,0 +1,378 @@
+[Master]
+Implementation=2
+FontFace=FiraCode Nerd Font
+FontHeight=-9
+FontWeight=700
+ZoomRatio=2
+[Settings]
+Name=
+RefreshPeriod=1000
+EmbeddedImage=
+PingAddr=
+[General]
+Sources=13
+Tables=0
+Layers=26
+[Source0]
+Name=GPU1 temperature
+Units=°C
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000000
+Gpu=00000000
+SrcName=
+[Source1]
+Name=GPU1 usage
+Units=%
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000030
+Gpu=00000000
+SrcName=
+[Source2]
+Name=GPU1 power
+Units=W
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000061
+Gpu=00000000
+SrcName=
+[Source3]
+Name=GPU1 memory usage
+Units=MB
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000031
+Gpu=00000000
+SrcName=
+[Source4]
+Name=CPU temperature
+Units=°C
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000080
+Gpu=FFFFFFFF
+SrcName=
+[Source5]
+Name=CPU usage
+Units=%
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000090
+Gpu=FFFFFFFF
+SrcName=
+[Source6]
+Name=CPU power
+Units=W
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000100
+Gpu=FFFFFFFF
+SrcName=
+[Source7]
+Name=RAM usage
+Units=MB
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000091
+Gpu=00000000
+SrcName=
+[Source8]
+Name=Framerate
+Units=FPS
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000050
+Gpu=FFFFFFFF
+SrcName=
+[Source9]
+Name=Framerate Min
+Units=FPS
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000052
+Gpu=FFFFFFFF
+SrcName=
+[Source10]
+Name=Framerate Avg
+Units=FPS
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000053
+Gpu=FFFFFFFF
+SrcName=
+[Source11]
+Name=Framerate Max
+Units=FPS
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000054
+Gpu=FFFFFFFF
+SrcName=
+[Source12]
+Name=Framerate 1% Low
+Units=FPS
+Format=
+Formula=
+Provider=MSI Afterburner
+SrcId=00000055
+Gpu=FFFFFFFF
+SrcName=
+[Layer0]
+Name=Rect 1
+Text=
+PositionX=0
+PositionY=0
+ExtentX=121
+ExtentY=36
+ExtentOrigin=0
+BgndColor=B4000000
+[Layer1]
+Name=Rect 1
+Text=
+PositionX=0
+PositionY=42
+ExtentX=121
+ExtentY=183
+ExtentOrigin=0
+BgndColor=B4000000
+[Layer2]
+Name=Game Title
+Text=Minecraft (Java)
+PositionX=8
+PositionY=8
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+[Layer3]
+Name=Game Setting
+Text=Default w/ VSync Off
+PositionX=8
+PositionY=20
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=70
+TextColor=C0C0C0
+[Layer4]
+Name=GPU
+Text=RTX 2050
+PositionX=8
+PositionY=50
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+TextColor=FF00
+[Layer5]
+Name=GPU Usage
+Text=%GPU1 usage% %
+PositionX=105
+PositionY=50
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer6]
+Name=GPU VRAM
+Text=%GPU1 memory usage% MB
+PositionX=105
+PositionY=62
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer7]
+Name=GPU VRAM
+Text=VRAM
+PositionX=8
+PositionY=62
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+TextColor=C0C0C0
+[Layer8]
+Name=GPU TEMP
+Text=GPU TEMP
+PositionX=8
+PositionY=74
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+TextColor=C0C0C0
+[Layer9]
+Name=GPU TEMP
+Text=%GPU1 temperature% °C
+PositionX=105
+PositionY=74
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer10]
+Name=GPU POWER
+Text=GPU POWER
+PositionX=8
+PositionY=86
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+TextColor=C0C0C0
+[Layer11]
+Name=GPU POWER
+Text=%GPU1 power% W
+PositionX=105
+PositionY=86
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer12]
+Name=CPU
+Text=i7-12650H
+PositionX=8
+PositionY=106
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+TextColor=80FF
+[Layer13]
+Name=CPU Usage
+Text=%CPU usage% %
+PositionX=105
+PositionY=106
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Alignment=-1
+FixedAlignment=1
+TextColor=FF8080
+[Layer14]
+Name=GPU TEMP
+Text=CPU TEMP
+PositionX=8
+PositionY=118
+ExtentX=44
+ExtentY=10
+ExtentOrigin=0
+TextColor=C0C0C0
+[Layer15]
+Name=CPU TEMP
+Text=%CPU temperature% °C
+PositionX=105
+PositionY=118
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer16]
+Name=GPU POWER
+Text=CPU POWER
+PositionX=8
+PositionY=130
+ExtentX=44
+ExtentY=10
+ExtentOrigin=0
+TextColor=C0C0C0
+[Layer17]
+Name=CPU POWER
+Text=%CPU power% W
+PositionX=105
+PositionY=130
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer18]
+Name=FPS
+Text=FPS
+PositionX=8
+PositionY=150
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+[Layer19]
+Name=FPS
+Text=<FR> FPS
+PositionX=105
+PositionY=150
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer20]
+Name=AVG FPS
+Text=AVG
+PositionX=8
+PositionY=162
+ExtentX=20
+ExtentY=12
+ExtentOrigin=0
+TextColor=C0C0C0
+[Layer21]
+Name=AVG FPS
+Text=<FRAVG> FPS
+PositionX=105
+PositionY=162
+ExtentX=6
+ExtentY=12
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer22]
+Name=AVG FPS
+Text=1% LOW
+PositionX=8
+PositionY=174
+ExtentX=20
+ExtentY=12
+ExtentOrigin=0
+TextColor=C0C0C0
+[Layer23]
+Name=AVG FPS
+Text=<FR10L> FPS
+PositionX=105
+PositionY=174
+ExtentX=6
+ExtentY=12
+ExtentOrigin=0
+Alignment=-1
+TextColor=FF8080
+[Layer24]
+Name=Frametime MS
+Text=<FT> MS
+PositionX=107
+PositionY=211
+ExtentX=6
+ExtentY=12
+ExtentOrigin=0
+Alignment=-1
+Size=50
+TextColor=FFFF80
+[Layer25]
+Name=Frametime Graph
+Text=<G=Framerate,-14,-2,1,0,100,0>
+PositionX=8
+PositionY=194
+ExtentX=105
+ExtentY=22
+ExtentOrigin=0
+TextColor=FFFF80
