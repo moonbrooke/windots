@@ -16,6 +16,10 @@ function windots {
     cd "$env:WINDOTS"
 }
 
+function cdnvim {
+    cd "$env:LOCALAPPDATA/nvim"
+}
+
 function gs {
     git status
 }
