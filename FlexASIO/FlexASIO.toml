@@ -1,0 +1,8 @@
+backend = "Windows WASAPI"
+bufferSizeSamples = 512
+[input]
+device = "Microphone Array (Intel® Smart Sound Technology for Digital Microphones)"
+suggestedLatencySeconds = 0.0
+[output]
+device = "Headphones (Realtek(R) Audio)"
+suggestedLatencySeconds = 0.0
