@@ -25,6 +25,7 @@ shape = "Block"
 save_to_clipboard = true
 
 [window]
+dimensions = { columns = 120, lines = 35 }
 # decorations = "none"
 dynamic_title = true
 opacity = 1.0
