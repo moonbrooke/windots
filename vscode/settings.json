@@ -9,5 +9,9 @@
   "breadcrumbs.enabled": false,
   "workbench.editor.showTabs": "single",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
-  "workbench.iconTheme": "catppuccin-mocha"
+  "workbench.iconTheme": "catppuccin-mocha",
+  "editor.minimap.autohide": "mouseover",
+  "editor.minimap.renderCharacters": false,
+  "editor.scrollbar.horizontalScrollbarSize": 8,
+  "editor.scrollbar.verticalScrollbarSize": 8
 }
