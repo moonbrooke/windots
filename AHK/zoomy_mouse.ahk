@@ -51,8 +51,8 @@ class Loupe {
 
     static Reset() {
         Loupe.Stop()
-        Loupe.MagnificationFactor := 2, Loupe.LensSize := 250
-        Loupe.BorderWidth := 2, Loupe.BorderColor := "367588"
+        Loupe.MagnificationFactor := 3, Loupe.LensSize := 750
+        Loupe.BorderWidth := 2, Loupe.BorderColor := "fdff93"
         Loupe.LenFormat := "Circle"
         Loupe.Magnify()
     }
