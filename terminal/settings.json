@@ -1,27 +1,77 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [],
+    "actions": 
+    [
+        {
+            "command": "openTabRenamer",
+            "id": "User.openTabRenamer"
+        },
+        {
+            "command": "openTabColorPicker",
+            "id": "User.openTabColorPicker"
+        }
+    ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "keybindings": 
     [
         {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+c"
+            "id": null,
+            "keys": "ctrl+tab"
         },
         {
-            "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
+            "id": null,
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
         },
         {
             "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
         },
         {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
             "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+p"
+        },
+        {
+            "id": "Terminal.NextTab",
+            "keys": "ctrl+shift+right"
+        },
+        {
+            "id": "Terminal.PrevTab",
+            "keys": "ctrl+shift+left"
+        },
+        {
+            "id": "Terminal.ClosePane",
+            "keys": "ctrl+d"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "id": "User.openTabRenamer",
+            "keys": "ctrl+shift+r"
+        },
+        {
+            "id": "Terminal.ToggleCommandPalette",
+            "keys": "ctrl+shift+\\"
+        },
+        {
+            "id": "User.openTabColorPicker",
+            "keys": "alt+vk(25)"
         }
     ],
     "newTabMenu": 
@@ -34,12 +84,16 @@
     {
         "defaults": 
         {
-            "colorScheme": "Catppuccin Mocha",
+            "colorScheme": "Tokyo Night",
+            "cursorShape": "vintage",
             "font": 
             {
                 "face": "CaskaydiaCove Nerd Font Mono",
                 "weight": "medium"
-            }
+            },
+            "opacity": 100,
+            "scrollbarState": "hidden",
+            "useAcrylic": false
         },
         "list": 
         [
@@ -69,10 +123,21 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "commandline": "\"C:\\Users\\farpras\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\" -nologo",
+                "elevate": true,
+                "guid": "{ee9b0eaf-bc60-469c-a221-7d1536e5a437}",
                 "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
+                "name": "PowerShell 7 (Admin)",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "commandline": "C:\\Users\\farpras\\scoop\\apps\\git\\current\\bin\\bash.exe",
+                "guid": "{373be2ec-950a-4d49-b2b3-27f4bf58f8b7}",
+                "hidden": false,
+                "icon": "C:\\Users\\farpras\\Pictures\\Terminal Icons\\git-bash-200x.png",
                 "name": "Git Bash",
-                "source": "Git"
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
@@ -123,9 +188,33 @@
             "selectionBackground": "#585B70",
             "white": "#BAC2DE",
             "yellow": "#F9E2AF"
+        },
+        {
+            "name": "Tokyo Night",
+            "foreground": "#a9b1dc",
+            "background": "#1a1b2c",
+            "cursorColor": "#c0caf5",
+            "selectionBackground": "#28344a",
+            "black": "#414868",
+            "red": "#f7768e",
+            "green": "#73daca",
+            "yellow": "#e0af68",
+            "blue": "#7aa2f7",
+            "purple": "#bb9af7",
+            "cyan": "#7dcfff",
+            "white": "#c0caf5",
+            "brightBlack": "#414868",
+            "brightRed": "#f7768e",
+            "brightGreen": "#73daca",
+            "brightYellow": "#e0af68",
+            "brightBlue": "#7aa2f7",
+            "brightPurple": "#bb9af7",
+            "brightCyan": "#7dcfff",
+            "brightWhite": "#c0caf5"
         }
     ],
-    "theme": "Catppuccin Mocha",
+    "showTabsFullscreen": true,
+    "theme": "Tokyo Night",
     "themes": 
     [
         {
@@ -173,6 +262,30 @@
                 "unfocusedFrame": null,
                 "useMica": false
             }
+        },
+        {
+            "name": "Tokyo Night",
+            "tab": 
+            {
+                "background": "#1a1b2cFF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#11111BFF",
+                "unfocusedBackground": "#11111BFF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
         }
-    ]
+    ],
+    "useAcrylicInTabRow": false
 }
