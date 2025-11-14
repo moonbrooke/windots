@@ -48,5 +48,10 @@ function gcms {
     git commit -m "$Message"
 }
 
+function gsmu {
+    git pull --recurse-submodules
+    git submodule update --remote --merge
+}
+
 # Other dev tools
 Set-Alias cat bat
