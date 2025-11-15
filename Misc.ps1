@@ -1,3 +1,13 @@
+# Delete directory
+function Remove-FolderForce {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Path
+    )
+    Remove-Item $Path -Recurse -Force
+}
+Set-Alias rmdir Remove-FolderForce
+
 # Teldrive
 function tdr {
     teldrive run -c "$env:USERPROFILE\.installer\bin\config.toml"
