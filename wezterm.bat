@@ -2,6 +2,6 @@
 setlocal
 
 set "LINK=%USERPROFILE%\.wezterm.lua"
-set "TARGET=C:\GitHub\windots\wezterm\.wezterm.lua"
+set "TARGET=%~dp0wezterm\.wezterm.lua"
 
 mklink "%LINK%" "%TARGET%"

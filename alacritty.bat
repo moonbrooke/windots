@@ -2,7 +2,7 @@
 setlocal
 
 set "LINK=%USERPROFILE%\AppData\Roaming\alacritty"
-set "TARGET=C:\GitHub\windots\alacritty"
+set "TARGET=%~dp0alacritty"
 
 :: Remove existing link or folder if it exists
 if exist "%LINK%" (

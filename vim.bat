@@ -2,6 +2,6 @@
 setlocal
 
 set "LINK=%USERPROFILE%\_vimrc"
-set "TARGET=C:\GitHub\windots\vim\_vimrc"
+set "TARGET=%~dp0vim\_vimrc"
 
 mklink "%LINK%" "%TARGET%"

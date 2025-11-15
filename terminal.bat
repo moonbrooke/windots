@@ -1,9 +1,7 @@
 @echo off
 setlocal
 
-set "current=%~dp0"
-
-set "source=%current%terminal\settings.json"
+set "source=%~dp0terminal\settings.json"
 set "destination=%USERPROFILE%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"
 
 :: Check if file exists
