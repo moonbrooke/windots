@@ -15,8 +15,6 @@ TraySetIcon "shell32.dll", 277
     if WinExist("ahk_exe WindowsTerminal.exe")
     {
         WinActivate
-        WinWaitActive("ahk_exe WindowsTerminal.exe", , 0.5)
-        Send("^+t")
     }
     else
     {
