@@ -1,79 +1,89 @@
 #Requires AutoHotkey v2.0
 
-; Create overlay GUI
 overlay := Gui("+AlwaysOnTop -Caption +ToolWindow +Border")
 overlay.BackColor := "1a1b26"
 overlay.SetFont("s16 cc0caf5", "CaskaydiaMono Nerd Font")
 txt := overlay.AddText("w400 h60 Center vKeyText", "")
-overlay.Show("x10 y10 NoActivate")  ; top-left corner
+overlay.Show("x1430 y900 NoActivate")
 
-; Function to update overlay text
-ShowKey(key) {
-    global overlay, txt
-    ; Append instead of replace
-    txt.Value .= (txt.Value ? "  " : "") . key
-    overlay.Show("NoActivate")
+pressed := Map()
 
-    ; Reset timer each time a key is added
-    SetTimer(ClearKeys, -1500) ; clear after 1.5s
+ShowKey(key, hotkeyName) {
+    global overlay, txt, pressed
+    if !pressed.Has(hotkeyName) {
+        pressed[hotkeyName] := true
+        txt.Value .= (txt.Value ? "  " : "") . key
+        overlay.Show("NoActivate")
+        SetTimer(ClearKeys, -1500)
+    }
 }
 
 ClearKeys() {
-    global txt
+    global txt, pressed
     txt.Value := ""
+    pressed.Clear()
 }
 
-; The keys
-~*a::ShowKey("A")
-~*b::ShowKey("B")
-~*c::ShowKey("C")
-~*d::ShowKey("D")
-~*e::ShowKey("E")
-~*f::ShowKey("F")
-~*g::ShowKey("G")
-~*h::ShowKey("H")
-~*i::ShowKey("I")
-~*j::ShowKey("J")
-~*k::ShowKey("K")
-~*l::ShowKey("L")
-~*m::ShowKey("M")
-~*n::ShowKey("N")
-~*o::ShowKey("O")
-~*p::ShowKey("P")
-~*q::ShowKey("Q")
-~*r::ShowKey("R")
-~*s::ShowKey("S")
-~*t::ShowKey("T")
-~*u::ShowKey("U")
-~*v::ShowKey("V")
-~*w::ShowKey("W")
-~*y::ShowKey("X")
-~*z::ShowKey("Z")
+; Keystrokes
+; #a::ShowKey("Win+A", "#a")
+; #q::ShowKey("Win+Q", "#q")
+; #Enter::ShowKey("Win+Enter", "#Enter")
+;
+; #a up::pressed.Delete("#a")
+; #q up::pressed.Delete("#q")
+; #Enter up::pressed.Delete("#Enter")
 
-~*0::ShowKey("0")
-~*1::ShowKey("1")
-~*2::ShowKey("2")
-~*3::ShowKey("3")
-~*4::ShowKey("4")
-~*5::ShowKey("5")
-~*6::ShowKey("6")
-~*7::ShowKey("7")
-~*8::ShowKey("8")
-~*9::ShowKey("9")
+; All the keys
+~*a::ShowKey("A", "a")
+~*b::ShowKey("B", "b")
+~*c::ShowKey("C", "c")
+~*d::ShowKey("D", "d")
+~*e::ShowKey("E", "e")
+~*f::ShowKey("F", "f")
+~*g::ShowKey("G", "g")
+~*h::ShowKey("H", "h")
+~*i::ShowKey("I", "i")
+~*j::ShowKey("J", "j")
+~*k::ShowKey("K", "k")
+~*l::ShowKey("L", "l")
+~*m::ShowKey("M", "m")
+~*n::ShowKey("N", "n")
+~*o::ShowKey("O", "o")
+~*p::ShowKey("P", "p")
+~*q::ShowKey("Q", "q")
+~*r::ShowKey("R", "r")
+~*s::ShowKey("S", "s")
+~*t::ShowKey("T", "t")
+~*u::ShowKey("U", "u")
+~*v::ShowKey("V", "v")
+~*w::ShowKey("W", "w")
+~*y::ShowKey("X", "x")
+~*z::ShowKey("Z", "z")
 
-~*-::ShowKey("-")
-~*=::ShowKey("=")
+~*0::ShowKey("0", "0")
+~*1::ShowKey("1", "1")
+~*2::ShowKey("2", "2")
+~*3::ShowKey("3", "3")
+~*4::ShowKey("4", "4")
+~*5::ShowKey("5", "5")
+~*6::ShowKey("6", "6")
+~*7::ShowKey("7", "7")
+~*8::ShowKey("8", "8")
+~*9::ShowKey("9", "9")
 
-~*Enter::ShowKey("Enter")
-~*Esc::ShowKey("Escape")
-~*Tab::ShowKey("Tab")
-~*Space::ShowKey("Space")
-~*LWin::ShowKey("Win")
-~*Shift::ShowKey("Shift")
-~*Ctrl::ShowKey("Ctrl")
-~*Alt::ShowKey("Alt")
-~*BS::ShowKey("BackSpace")
-~*Left::ShowKey("Left")
-~*Down::ShowKey("Down")
-~*Up::ShowKey("Up")
-~*Right::ShowKey("Right")
+~*-::ShowKey("-", "-")
+~*=::ShowKey("=", "=")
+
+~*Enter::ShowKey("Enter", "Enter")
+~*Esc::ShowKey("Esc", "Esc")
+~*Tab::ShowKey("Tab", "Tab")
+~*Space::ShowKey("Space", "Space")
+~*LWin::ShowKey("Win", "Win")
+~*Shift::ShowKey("Shift", "Shift")
+~*Ctrl::ShowKey("Ctrl", "Ctrl")
+~*Alt::ShowKey("Alt", "Alt")
+~*BS::ShowKey("BackSpace", "BackSpace")
+~*Left::ShowKey("Left", "Left")
+~*Down::ShowKey("Down", "Down")
+~*Up::ShowKey("Up", "Up")
+~*Right::ShowKey("Right", "Right")
