@@ -2,6 +2,12 @@
 
 A collection of my AutoHotKey scripts
 
+### keybinds
+
+My custom Windows keybinds.
+
+- `Windows + Enter`: Launch Windows Terminal
+
 ### zoomy_mouse
 
 A zoom/magnifier tool.
