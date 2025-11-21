@@ -7,6 +7,7 @@ A collection of my AutoHotKey scripts
 My custom Windows keybinds.
 
 - `Windows + Enter`: Launch Windows Terminal
+- `Windows + Q`: Quit current active window
 
 ### zoomy_mouse
 

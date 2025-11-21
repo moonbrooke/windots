@@ -15,3 +15,6 @@
         Run("wt.exe")
     }
 }
+
+; Windows + Q = Quit current active programs
+#q::WinClose("A")
