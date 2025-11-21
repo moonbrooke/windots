@@ -2,7 +2,7 @@
 ; Original on https://www.autohotkey.com/boards/viewtopic.php?f=83&t=134936
 #Requires AutoHotkey v2+
 #SingleInstance Force
-TraySetIcon "Shell32.dll", 23
+TraySetIcon "shell32.dll", 23
 
 F1:: Loupe.Toggle()
 +F1:: Loupe.Reset()

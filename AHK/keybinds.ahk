@@ -1,5 +1,8 @@
 #Requires AutoHotkey v2.0
 
+; Icon
+TraySetIcon "shell32.dll", 277
+
 ; Windows + Enter = Windows Terminal 
 ; #Enter::Run("wt.exe")
 #Enter::
