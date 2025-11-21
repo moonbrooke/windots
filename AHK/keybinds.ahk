@@ -1,9 +1,14 @@
 #Requires AutoHotkey v2.0
 
+; # Windows
+; ^ Ctrl
+; ! Alt
+; + Shift
+
 ; Icon
 TraySetIcon "shell32.dll", 277
 
-; Windows + Enter = Windows Terminal 
+; Win + Enter = Windows Terminal 
 ; #Enter::Run("wt.exe")
 #Enter::
 {
@@ -19,5 +24,5 @@ TraySetIcon "shell32.dll", 277
     }
 }
 
-; Windows + Q = Quit current active programs
+; Win + Q = Quit current active programs
 #q::WinClose("A")
