@@ -36,7 +36,7 @@ function gaa {
     git add *
 }
 
-function gp {
+function gpsh {
     git push
 }
 
