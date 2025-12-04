@@ -63,3 +63,11 @@ function Dictionary {
     $response[0].meanings[0].definitions[0].definition
 }
 Set-Alias dict Dictionary
+
+function adlc {
+    cd $env:USERPROFILE/AppData/Local
+}
+
+function adrm {
+    cd $env:USERPROFILE/AppData/Roaming
+}
