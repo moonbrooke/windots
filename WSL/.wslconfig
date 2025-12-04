@@ -2,4 +2,3 @@
 # memory=7GB         # Maximum RAM WSL can use
 # swap=2GB           # Optional: Swap file size
 localhostForwarding=true
-processors=8
