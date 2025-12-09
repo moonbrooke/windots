@@ -5,6 +5,7 @@ Import-Module -Name Terminal-Icons
 . "$env:USERPROFILE\Documents\PowerShell\Dev_Tools.ps1"
 . "$env:USERPROFILE\Documents\PowerShell\Ffmpeg.ps1"
 . "$env:USERPROFILE\Documents\PowerShell\Scoop.ps1"
+. "$env:USERPROFILE\Documents\PowerShell\Choco.ps1"
 . "$env:USERPROFILE\Documents\PowerShell\Misc.ps1"
 . "$env:USERPROFILE\Documents\PowerShell\Youtube.ps1"
 

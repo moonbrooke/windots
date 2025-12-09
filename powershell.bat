@@ -16,6 +16,9 @@ set "TARGET4=%~dp0Ffmpeg.ps1"
 set "LINK5=%USERPROFILE%\Documents\PowerShell\Scoop.ps1"
 set "TARGET5=%~dp0Scoop.ps1"
 
+set "LINK5=%USERPROFILE%\Documents\PowerShell\Choco.ps1"
+set "TARGET5=%~dp0Choco.ps1"
+
 set "LINK6=%USERPROFILE%\Documents\PowerShell\Misc.ps1"
 set "TARGET6=%~dp0Misc.ps1"
 
