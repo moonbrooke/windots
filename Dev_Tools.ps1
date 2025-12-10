@@ -53,5 +53,9 @@ function gsmu {
     git submodule update --remote --merge
 }
 
+function vsdc {
+    & "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\VsDevCmd.bat" -arch=x64
+}
+
 # Other dev tools
 Set-Alias cat bat
