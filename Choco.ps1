@@ -8,6 +8,11 @@ function ccf {
     choco find $query
 }
 
+function ccs {
+    param([string]$query)
+    choco search $query
+}
+
 function cci {
     param([string]$query)
     choco install $query
