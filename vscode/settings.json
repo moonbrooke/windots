@@ -19,7 +19,7 @@
   "chat.disableAIFeatures": true,
   "C_Cpp.copilotHover": "disabled",
   "workbench.activityBar.location": "hidden",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "git.openRepositoryInParentFolders": "never",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
