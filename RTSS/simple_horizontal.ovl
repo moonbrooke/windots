@@ -1,6 +1,6 @@
 [Master]
 Implementation=2
-FontFace=FiraCode Nerd Font
+FontFace=Unispace
 FontHeight=-9
 FontWeight=400
 ZoomRatio=2
@@ -98,7 +98,7 @@ Gpu=FFFFFFFF
 SrcName=
 [Layer0]
 Name=stats
-Text=FPS: <FR> (<FRAVG> AVG / <FR10L> 1% LOW) / GPU: %GPU1 usage%% (%GPU1 memory usage% MB/%GPU1 temperature% °C) / CPU: %CPU usage%% (%CPU temperature% °C) / RAM: %RAM usage% MB
+Text=FPS: <FR> (AVG: <FRAVG> / 1%LOW: <FR10L>) / GPU: %GPU1 usage%% (%GPU1 memory usage% MB/%GPU1 temperature% °C) / CPU: %CPU usage%% (%CPU temperature% °C) / RAM: %RAM usage% MB
 PositionX=5
 PositionY=5
 ExtentX=0
