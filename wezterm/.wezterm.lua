@@ -64,15 +64,15 @@ config.window_decorations = "TITLE|RESIZE"
 config.show_tab_index_in_tab_bar = false
 config.integrated_title_buttons = { "Hide", "Maximize", "Close" }
 config.scrollback_lines = 10000
-config.show_update_window = true
+-- config.show_update_window = true
 config.use_dead_keys = false
 config.unicode_version = 15
 config.macos_window_background_blur = 100
 config.window_close_confirmation = "NeverPrompt"
 
-config.default_cursor_style = "BlinkingBlock"
-config.cursor_blink_rate = 600
-config.force_reverse_video_cursor = false
+-- config.default_cursor_style = "BlinkingBlock"
+-- config.cursor_blink_rate = 600
+-- config.force_reverse_video_cursor = false
 
 config.harfbuzz_features = { "liga=1" }
 config.font = wezterm.font({
