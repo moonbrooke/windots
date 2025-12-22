@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<find>
+	<lister opus_version_beta="0" opus_version_major="13" opus_version_minor="19">
+		<collection>coll://Find Results</collection>
+		<filter changed="yes" desc="" name="" />
+		<flags>0xa40001</flags>
+		<flags2>0xa40001</flags2>
+		<mode>0</mode>
+		<folders>
+			<path>
+				<dir>
+					<pathstring>F:\Downloads (OLD)\Anu\HC</pathstring>
+				</dir>
+			</path>
+		</folders>
+		<exclude>
+			<path>
+				<dir>
+					<pathstring>$Recycle.Bin\*</pathstring>
+				</dir>
+			</path>
+			<path>
+				<dir>
+					<pathstring>System Volume Information\*</pathstring>
+				</dir>
+			</path>
+		</exclude>
+		<simple>
+			<name>(.mp4|.m4v|.mov|.avi|.flv|.ts|.m3u8|.mkv|.webm|.vob|.ogv|.gifv|.mts|.wmv|.3gp|.mpg|.mpeg|.f4v)</name>
+			<contains />
+			<flags>0x80030</flags>
+			<date_type>0</date_type>
+			<time_type>0</time_type>
+			<size_type>0</size_type>
+			<date1>+1dc5ff9+f0758000</date1>
+			<date2>+1dc5ff9+f0758000</date2>
+			<time1>+1dc602b+1cf5c000</time1>
+			<time2>+1dc602b+40b8def0</time2>
+			<size1>0</size1>
+			<size2>0</size2>
+			<date_within>1</date_within>
+			<date_withinunits>0</date_withinunits>
+			<time_within>1</time_within>
+			<time_withinunits>1</time_withinunits>
+			<size_fromunits>0</size_fromunits>
+			<size_tounits>0</size_tounits>
+			<type />
+		</simple>
+		<indexed engine="0" query="" />
+		<splitter>0.500000</splitter>
+	</lister>
+</find>
