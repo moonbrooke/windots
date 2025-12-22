@@ -47,7 +47,7 @@ config.window_frame = {
 }
 
 config.tab_max_width = 16
-config.tab_bar_at_bottom = true
+config.tab_bar_at_bottom = false
 config.disable_default_key_bindings = true
 config.adjust_window_size_when_changing_font_size = false
 config.audible_bell = "Disabled"
@@ -60,7 +60,7 @@ config.window_padding = {
 }
 config.initial_cols = 120
 config.initial_rows = 30
-config.window_decorations = "TITLE|RESIZE"
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.show_tab_index_in_tab_bar = false
 config.integrated_title_buttons = { "Hide", "Maximize", "Close" }
 config.scrollback_lines = 10000
