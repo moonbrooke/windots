@@ -1,4 +1,4 @@
-Import-Module -Name Terminal-Icons
+# Import-Module -Name Terminal-Icons
 
 # Import Env. Variables
 . "$env:USERPROFILE\Documents\PowerShell\Environment_Variables.ps1"
