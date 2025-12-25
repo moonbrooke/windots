@@ -1,3 +1,10 @@
+# EZA
+Set-Alias ls eza
+
+function ll {
+    eza -la
+}
+
 # Delete directory
 function Remove-FolderForce {
     param(
