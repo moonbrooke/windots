@@ -27,6 +27,35 @@ if (Test-Path($ChocolateyProfile)) {
 # Invoke-Expression (&starship init powershell)
 
 # Custom PowerShell Prompt 
+# function prompt {
+#     $cwd = (Get-Location).Path
+#
+#     $gitInfo = ""
+#     try {
+#         $gitDir = git rev-parse --show-toplevel 2>$null
+#         if ($gitDir) {
+#             $repoName = Split-Path $gitDir -Leaf
+#             $branch   = git rev-parse --abbrev-ref HEAD 2>$null
+#             if ($branch) {
+#                 $gitInfo = "  $branch"
+#             } else {
+#                 $gitInfo = " 󰊢 $repoName"
+#             }
+#         }
+#     } catch {}
+#
+#     Write-Host $cwd -ForegroundColor Cyan -NoNewline
+#     if ($gitInfo) {
+#         Write-Host $gitInfo -ForegroundColor Magenta
+#     } else {
+#         Write-Host ""
+#     }
+#
+#     # Write-Host "$" -ForegroundColor Green -NoNewline
+#     Write-Host "$" -NoNewline
+#     return " "
+# }
+
 function prompt {
     $cwd = (Get-Location).Path
 
@@ -36,8 +65,28 @@ function prompt {
         if ($gitDir) {
             $repoName = Split-Path $gitDir -Leaf
             $branch   = git rev-parse --abbrev-ref HEAD 2>$null
+
+            $status = git status --porcelain 2>$null
+            $unstaged = $false
+            foreach ($line in $status) {
+                if ($line.Length -ge 2 -and $line[1] -ne ' ') {
+                    $unstaged = $true
+                    break
+                }
+            }
+
+            $unpushed = $false
+            try {
+                $ahead = git rev-list "@{u}..HEAD" 2>$null
+                if ($ahead) {
+                    $unpushed = $true
+                }
+            } catch {}
+
             if ($branch) {
                 $gitInfo = "  $branch"
+                if ($unstaged) { $gitInfo += " [*]" }
+                if ($unpushed) { $gitInfo += " [󰁝]" }
             } else {
                 $gitInfo = " 󰊢 $repoName"
             }
@@ -51,6 +100,7 @@ function prompt {
         Write-Host ""
     }
 
-    Write-Host "$" -ForegroundColor Green -NoNewline
+    # Write-Host "$" -ForegroundColor Cyan -NoNewline
+    Write-Host "$" -NoNewline
     return " "
 }
