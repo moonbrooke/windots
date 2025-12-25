@@ -1,9 +1,13 @@
 # EZA
-Set-Alias ls eza
-
-function ll {
-    eza -la
+function ezadf {
+    eza --group-directories-first
 }
+Set-Alias ls ezadf
+
+function ezalldf {
+    eza -la --group-directories-first
+}
+Set-Alias ll ezalldf
 
 # Delete directory
 function Remove-FolderForce {
