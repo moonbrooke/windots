@@ -19,10 +19,6 @@
     [
         {
             "id": null,
-            "keys": "ctrl+tab"
-        },
-        {
-            "id": null,
             "keys": "ctrl+shift+tab"
         },
         {
@@ -30,16 +26,12 @@
             "keys": "ctrl+c"
         },
         {
+            "id": null,
+            "keys": "ctrl+tab"
+        },
+        {
             "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
-        },
-        {
-            "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
-        },
-        {
-            "id": "Terminal.DuplicatePaneAuto",
-            "keys": "alt+shift+d"
         },
         {
             "id": null,
@@ -48,6 +40,10 @@
         {
             "id": "Terminal.NextTab",
             "keys": "ctrl+shift+right"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
         },
         {
             "id": "Terminal.PrevTab",
@@ -100,7 +96,7 @@
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
+                "hidden": true,
                 "name": "PowerShell 5"
             },
             {
@@ -111,7 +107,7 @@
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
+                "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
@@ -132,15 +128,38 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{b000ca68-8199-5c93-ae34-ff357f51c4c3}",
+                "hidden": false,
+                "name": "archlinux",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "bellStyle": "none",
                 "commandline": "C:\\Users\\farpras\\scoop\\apps\\git\\current\\bin\\bash.exe",
                 "guid": "{373be2ec-950a-4d49-b2b3-27f4bf58f8b7}",
                 "hidden": false,
                 "icon": "C:\\Users\\farpras\\Pictures\\Terminal Icons\\git-bash-200x.png",
                 "name": "Git Bash",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "bellStyle": "none",
+                "commandline": "C:\\Users\\farpras\\scoop\\shims\\bash.exe",
+                "guid": "{df0cd457-a9d2-4071-95ed-e814d53de8c0}",
+                "hidden": false,
+                "icon": "C:\\Users\\farpras\\Pictures\\Terminal Icons\\Bash_Logo.png",
+                "name": "Bash",
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
+    "rendering.graphicsAPI": "direct3d11",
     "schemes": 
     [
         {
@@ -190,30 +209,30 @@
             "yellow": "#F9E2AF"
         },
         {
-            "name": "Tokyo Night",
-            "foreground": "#a9b1dc",
-            "background": "#1a1b2c",
-            "cursorColor": "#c0caf5",
-            "selectionBackground": "#28344a",
+            "background": "#1A1B26",
             "black": "#414868",
-            "red": "#f7768e",
-            "green": "#73daca",
-            "yellow": "#e0af68",
-            "blue": "#7aa2f7",
-            "purple": "#bb9af7",
-            "cyan": "#7dcfff",
-            "white": "#c0caf5",
+            "blue": "#7AA2F7",
             "brightBlack": "#414868",
-            "brightRed": "#f7768e",
-            "brightGreen": "#73daca",
-            "brightYellow": "#e0af68",
-            "brightBlue": "#7aa2f7",
-            "brightPurple": "#bb9af7",
-            "brightCyan": "#7dcfff",
-            "brightWhite": "#c0caf5"
+            "brightBlue": "#7AA2F7",
+            "brightCyan": "#7DCFFF",
+            "brightGreen": "#73DACA",
+            "brightPurple": "#BB9AF7",
+            "brightRed": "#F7768E",
+            "brightWhite": "#C0CAF5",
+            "brightYellow": "#E0AF68",
+            "cursorColor": "#C0CAF5",
+            "cyan": "#7DCFFF",
+            "foreground": "#A9B1DC",
+            "green": "#73DACA",
+            "name": "Tokyo Night",
+            "purple": "#BB9AF7",
+            "red": "#F7768E",
+            "selectionBackground": "#28344A",
+            "white": "#C0CAF5",
+            "yellow": "#E0AF68"
         }
     ],
-    "showTabsFullscreen": true,
+    "showTabsFullscreen": false,
     "theme": "Tokyo Night",
     "themes": 
     [
@@ -267,7 +286,7 @@
             "name": "Tokyo Night",
             "tab": 
             {
-                "background": "#1a1b2cFF",
+                "background": "#1A1B26FF",
                 "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
@@ -287,5 +306,9 @@
             }
         }
     ],
-    "useAcrylicInTabRow": false
+    "trimBlockSelection": false,
+    "trimPaste": false,
+    "useAcrylicInTabRow": false,
+    "warning.largePaste": false,
+    "warning.multiLinePaste": false
 }

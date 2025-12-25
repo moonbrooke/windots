@@ -1,25 +1,7 @@
 @echo off
 setlocal
 
-set "source=%~dp0terminal\settings.json"
-set "destination=%USERPROFILE%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"
+set "LINK=%USERPROFILE%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+set "TARGET=%~dp0terminal\settings.json"
 
-:: Check if file exists
-if not exist "%source%" (
-    echo Source file not found: %source%
-    goto :eof
-)
-
-:: Create folder if it doesn't exist
-if not exist "%destination%" (
-    echo Creating destination folder: %destination%
-    mkdir "%destination%"
-)
-
-:: Copy file
-echo Copying file...
-copy "%source%" "%destination%" /Y
-
-echo Done.
-endlocal
-pause
+mklink "%LINK%" "%TARGET%"
