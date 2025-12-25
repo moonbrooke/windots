@@ -24,4 +24,33 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 # PUT AT THE END
-Invoke-Expression (&starship init powershell)
+# Invoke-Expression (&starship init powershell)
+
+# Custom PowerShell Prompt 
+function prompt {
+    $cwd = (Get-Location).Path
+
+    $gitInfo = ""
+    try {
+        $gitDir = git rev-parse --show-toplevel 2>$null
+        if ($gitDir) {
+            $repoName = Split-Path $gitDir -Leaf
+            $branch   = git rev-parse --abbrev-ref HEAD 2>$null
+            if ($branch) {
+                $gitInfo = "  $branch"
+            } else {
+                $gitInfo = " 󰊢 $repoName"
+            }
+        }
+    } catch {}
+
+    Write-Host $cwd -ForegroundColor Cyan -NoNewline
+    if ($gitInfo) {
+        Write-Host $gitInfo -ForegroundColor Magenta
+    } else {
+        Write-Host ""
+    }
+
+    Write-Host "$" -ForegroundColor Green -NoNewline
+    return " "
+}
