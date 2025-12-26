@@ -40,6 +40,6 @@ function prompt {
         Write-Host ""
     }
 
-    Write-Host "$" -ForegroundColor Gray -NoNewline
+    Write-Host "$" -ForegroundColor Cyan -NoNewline
     return " "
 }
