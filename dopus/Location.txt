@@ -1,1 +1,5 @@
+Video files.xml
 C:\Users\username\AppData\Roaming\GPSoftware\Directory Opus\Util Presets\Find
+
+defined.off, folders.off
+C:\Users\username\AppData\Roaming\GPSoftware\Directory Opus\Formats

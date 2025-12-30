@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<folder_formats>
+	<path>
+		<format content_max="999" content_min="1" getsizes="default" numericname="yes" sort="dirsfirst" sortnewfiles="default" threshhold="25" useforsubfolders="yes" v="4" view_mode="details">
+			<field fill_width="yes" id="name" manual_resize="yes" size="211" size_dpi="100" sort="1" />
+			<field id="sizeauto" size="60" size_dpi="100" />
+			<field id="type" size="65" size_dpi="100" />
+			<field id="modified" size="133" size_dpi="100" />
+			<field id="status" manual_resize="yes" size="50" size_dpi="100" />
+			<field id="availability" manual_resize="yes" size="70" size_dpi="100" />
+		</format>
+		<dir>
+			<pathstring>C:\Users\farpras\OneDrive</pathstring>
+			<tree>0x1000</tree>
+		</dir>
+	</path>
+</folder_formats>
