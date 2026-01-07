@@ -1,0 +1,8 @@
+<Configuration>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>D:\Sandbox\Host</HostFolder>
+      <SandboxFolder>D:\Sandbox\Guest</SandboxFolder>
+    </MappedFolder>
+  </MappedFolders>
+</Configuration>
