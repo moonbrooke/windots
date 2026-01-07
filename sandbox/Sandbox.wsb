@@ -1,8 +1,15 @@
 <Configuration>
+  <VGpu>Disable</VGpu>
+  <Networking>Enable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ProtectedClient>Default</ProtectedClient>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <ClipboardRedirection>Enable</ClipboardRedirection>
   <MappedFolders>
     <MappedFolder>
       <HostFolder>D:\Sandbox\Host</HostFolder>
-      <SandboxFolder>D:\Sandbox\Guest</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
     </MappedFolder>
   </MappedFolders>
 </Configuration>
