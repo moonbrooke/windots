@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Macro title="Track Height - Small" group="farpras" description="">
+	<CommandElement category="Zoom" name="Track Height Small"/>
+</Macro>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Macro title="Project Settings" group="farpras" description="">
+	<CommandElement category="File" name="Document Setup"/>
+</Macro>

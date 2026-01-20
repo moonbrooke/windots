@@ -3,12 +3,17 @@
 	<Command category="Application" name="Activate Purchased Items"/>
 	<Command category="Application" name="Activation"/>
 	<Command category="Application" name="Backup and Restore"/>
+	<Command category="Application" name="Delete Account"/>
 	<Command category="Application" name="Installation"/>
 	<Command category="Application" name="Keyboard Shortcuts"/>
 	<Command category="Application" name="Login"/>
 	<Command category="Application" name="Options">
 		<Key name="Ctrl+,"/>
 	</Command>
+	<Command category="Application" name="Show Account Options"/>
+	<Command category="Application" name="Sign in"/>
+	<Command category="Application" name="Sign out"/>
+	<Command category="Application" name="Sign up"/>
 	<Command category="Arranger" name="Add Arranger Section from Selection"/>
 	<Command category="Arranger" name="Copy to new Scratch Pad"/>
 	<Command category="Arranger" name="Create Markers from Sections"/>
@@ -46,7 +51,7 @@
 	<Command category="Artists" name="Remove"/>
 	<Command category="Audio" name="Apply Audio Bend"/>
 	<Command category="Audio" name="Apply Chords from Chord Track"/>
-	<Command category="Audio" name="Bypass Gain Envelope"/>
+	<Command category="Audio" name="Bypass Gain Curve"/>
 	<Command category="Audio" name="Create Autofades">
 		<Key name="Shift+X"/>
 	</Command>
@@ -67,7 +72,9 @@
 	<Command category="Audio" name="Edit with Melodyne">
 		<Key name="Ctrl+M"/>
 	</Command>
+	<Command category="Audio" name="Extract Drums"/>
 	<Command category="Audio" name="Extract Key Signatures from Event"/>
+	<Command category="Audio" name="Extract Notes"/>
 	<Command category="Audio" name="Extract to Tempo Track"/>
 	<Command category="Audio" name="Fade In to Cursor"/>
 	<Command category="Audio" name="Fade Out from Cursor"/>
@@ -93,7 +100,7 @@
 		<Key name="Ctrl+Alt+M"/>
 	</Command>
 	<Command category="Audio" name="Render Event FX"/>
-	<Command category="Audio" name="Reset Gain Envelope"/>
+	<Command category="Audio" name="Reset Gain Curve"/>
 	<Command category="Audio" name="Restore Event FX"/>
 	<Command category="Audio" name="Reverse Audio">
 		<Key name="Ctrl+R"/>
@@ -110,7 +117,7 @@
 	<Command category="Audio" name="Split at Bend Markers"/>
 	<Command category="Audio" name="Strip Silence"/>
 	<Command category="Audio" name="Toggle Bend Markers"/>
-	<Command category="Audio" name="Toggle Gain Envelope"/>
+	<Command category="Audio" name="Toggle Gain Curve"/>
 	<Command category="Audio Device" name="Dim"/>
 	<Command category="Audio Device" name="Mono"/>
 	<Command category="Audio Device" name="Mute"/>
@@ -120,8 +127,8 @@
 	<Command category="Audio Device" name="Speaker C"/>
 	<Command category="Audio Device" name="Talkback"/>
 	<Command category="Automation" name="Add Automation Lane"/>
-	<Command category="Automation" name="Apply Current Automation to Song End"/>
-	<Command category="Automation" name="Apply Current Automation to Song Start"/>
+	<Command category="Automation" name="Apply Current Automation to Session End"/>
+	<Command category="Automation" name="Apply Current Automation to Session Start"/>
 	<Command category="Automation" name="Latch"/>
 	<Command category="Automation" name="Manage Parameters"/>
 	<Command category="Automation" name="Mouse-Over"/>
@@ -186,7 +193,6 @@
 	<Command category="Browser" name="Show Pool">
 		<Key name="F10"/>
 	</Command>
-	<Command category="Browser" name="Show Shop"/>
 	<Command category="Browser" name="Show Splice"/>
 	<Command category="Channel Components" name="Show Audio Device Controls"/>
 	<Command category="Channel Components" name="Show Channel Icons"/>
@@ -210,11 +216,13 @@
 	<Command category="Console" name="Add Send"/>
 	<Command category="Console" name="Apply Track Preset"/>
 	<Command category="Console" name="Collapse all Micro Views"/>
+	<Command category="Console" name="Enable Direct Monitoring"/>
 	<Command category="Console" name="Enable Listen Bus"/>
 	<Command category="Console" name="Expand all Micro Views"/>
 	<Command category="Console" name="Find Channel">
 		<Key name="Ctrl+Alt+C"/>
 	</Command>
+	<Command category="Console" name="Freeze to Rendered Audio"/>
 	<Command category="Console" name="Global Mute">
 		<Key name="Ctrl+Shift+M"/>
 	</Command>
@@ -296,7 +304,7 @@
 	<Command category="Console" name="Show Channel Editor">
 		<Key name="F11"/>
 	</Command>
-	<Command category="Console" name="Show Channel Overview"/>
+	<Command category="Console" name="Show Channel Tab"/>
 	<Command category="Console" name="Show Disabled Channels"/>
 	<Command category="Console" name="Show Enabled Channels"/>
 	<Command category="Console" name="Show External Devices"/>
@@ -321,10 +329,10 @@
 		<Key name="Shift+F3"/>
 	</Command>
 	<Command category="Console" name="Toggle Width"/>
-	<Command category="Console" name="Transform to Bus Channel"/>
-	<Command category="Console" name="Transform to Rendered Audio"/>
+	<Command category="Console" name="Unfreeze to Bus Channel"/>
 	<Command category="Console" name="Unlock Panning"/>
 	<Command category="Console" name="Update Scene"/>
+	<Command category="Cue Mix" name="Use External Cue Mix System"/>
 	<Command category="Devices" name="Activate All Inserts"/>
 	<Command category="Devices" name="All Notes Off">
 		<Key name="#"/>
@@ -415,6 +423,7 @@
 	<Command category="Edit" name="Insert Bend Marker">
 		<Key name="Alt+Ins"/>
 	</Command>
+	<Command category="Edit" name="Insert Chord Preset"/>
 	<Command category="Edit" name="Insert Key Signature"/>
 	<Command category="Edit" name="Insert Silence">
 		<Key name="Ctrl+Alt+I"/>
@@ -542,7 +551,9 @@
 	<Command category="Edit" name="Split Range">
 		<Key name="Ctrl+Alt+X"/>
 	</Command>
+	<Command category="Edit" name="Store Chord Preset"/>
 	<Command category="Edit" name="Synchronize Editor to Arrangement"/>
+	<Command category="Edit" name="Toggle Automation Follows Events"/>
 	<Command category="Edit" name="Toggle No Overlap"/>
 	<Command category="Edit" name="Toggle Note Audition"/>
 	<Command category="Edit" name="Toggle Ripple Edit">
@@ -575,6 +586,7 @@
 	</Command>
 	<Command category="Event" name="Crop to Content"/>
 	<Command category="Event" name="Decrease Loop Count"/>
+	<Command category="Event" name="Double"/>
 	<Command category="Event" name="Export Selection"/>
 	<Command category="Event" name="Extend by Grid"/>
 	<Command category="Event" name="Extend to Part End"/>
@@ -647,8 +659,8 @@
 		<Key name="Ctrl+N"/>
 	</Command>
 	<Command category="File" name="New Project"/>
+	<Command category="File" name="New Session"/>
 	<Command category="File" name="New Show"/>
-	<Command category="File" name="New Song"/>
 	<Command category="File" name="Open">
 		<Key name="Ctrl+O"/>
 	</Command>
@@ -728,6 +740,7 @@
 	<Command category="Help" name="Website"/>
 	<Command category="Instrument Parts" name="Convert Part to Pattern"/>
 	<Command category="Instrument Parts" name="Convert Pattern to Part"/>
+	<Command category="Instrument Parts" name="Create Drum Click"/>
 	<Command category="Instrument Parts" name="Detect Key Signature"/>
 	<Command category="Instrument Parts" name="Explode Pitches to Tracks"/>
 	<Command category="Instrument Parts" name="Insert Instrument Part">
@@ -781,7 +794,7 @@
 	<Command category="Launcher" name="Global Quantize 4 Bars"/>
 	<Command category="Launcher" name="Global Quantize 8 Bars"/>
 	<Command category="Launcher" name="Global Quantize Off"/>
-	<Command category="Launcher" name="Insert Playlist into Song"/>
+	<Command category="Launcher" name="Insert Playlist into Session"/>
 	<Command category="Launcher" name="Launch Cells"/>
 	<Command category="Launcher" name="Paste Cell Properties"/>
 	<Command category="Launcher" name="Play Selected Cells"/>
@@ -919,6 +932,9 @@
 	<Command category="Macros" name="Macro T2N0YXZlIGRvd24="/>
 	<Command category="Macros" name="Macro T2N0YXZlIHVw"/>
 	<Command category="Macros" name="Macro T3ZlcnZpZXc="/>
+	<Command category="Macros" name="Macro UGFjayBGb2xkZXIgKyBCdXM=">
+		<Key name="Alt+B"/>
+	</Command>
 	<Command category="Macros" name="Macro UGl6emljYXRv"/>
 	<Command category="Macros" name="Macro UGx1Zy1JbiBNYW5hZ2Vy"/>
 	<Command category="Macros" name="Macro UG9ydGFtZW50bw=="/>
@@ -1116,6 +1132,7 @@
 	<Command category="Musical Functions" name="Transpose"/>
 	<Command category="Musical Functions" name="Velocity"/>
 	<Command category="Navigation" name="Back"/>
+	<Command category="Navigation" name="Backup &amp; Restore"/>
 	<Command category="Navigation" name="Cancel">
 		<Key name="Esc"/>
 	</Command>
@@ -1251,6 +1268,7 @@
 	<Command category="Navigation" name="Up Skip">
 		<Key name="Ctrl+Up Arrow"/>
 	</Command>
+	<Command category="Navigation" name="Upload Preset"/>
 	<Command category="Note Length" name="Dotted"/>
 	<Command category="Note Length" name="Follow Quantize"/>
 	<Command category="Note Length" name="Next Base"/>
@@ -1342,6 +1360,7 @@
 	<Command category="Project" name="Digital Release"/>
 	<Command category="Project" name="Disable Track"/>
 	<Command category="Project" name="Enable Track"/>
+	<Command category="Project" name="Freeze to Rendered Audio"/>
 	<Command category="Project" name="Import File"/>
 	<Command category="Project" name="Locate Missing Devices"/>
 	<Command category="Project" name="Make DDP Image"/>
@@ -1351,8 +1370,7 @@
 	<Command category="Project" name="Reset Track Markers to Content"/>
 	<Command category="Project" name="Split Track and Event at Cursor"/>
 	<Command category="Project" name="Split Track at Cursor"/>
-	<Command category="Project" name="Transform to Realtime Audio"/>
-	<Command category="Project" name="Transform to Rendered Audio"/>
+	<Command category="Project" name="Unfreeze to Realtime Audio"/>
 	<Command category="Project" name="Update Mastering Files"/>
 	<Command category="Quantize" name="Clear Pattern"/>
 	<Command category="Quantize" name="Next Base"/>
@@ -1445,15 +1463,44 @@
 	<Command category="Scratch Pad" name="Delete Scratch Pad"/>
 	<Command category="Scratch Pad" name="Duplicate Scratch Pad"/>
 	<Command category="Scratch Pad" name="Rename Scratch Pad"/>
+	<Command category="Session" name="Export Mixdown">
+		<Key name="Ctrl+E"/>
+	</Command>
+	<Command category="Session" name="Export Spatial Audio"/>
+	<Command category="Session" name="Export Stems">
+		<Key name="Ctrl+Shift+E"/>
+	</Command>
+	<Command category="Session" name="Import File">
+		<Key name="Ctrl+Shift+O"/>
+	</Command>
+	<Command category="Session" name="Import Session Data">
+		<Key name="Ctrl+Shift+I"/>
+	</Command>
+	<Command category="Session" name="Locate Missing Devices"/>
+	<Command category="Session" name="Remove Track">
+		<Key name="Shift+T"/>
+	</Command>
+	<Command category="Session" name="Remove Track and Instrument"/>
+	<Command category="Session" name="Render Click"/>
+	<Command category="Session" name="Send to Notion"/>
+	<Command category="Session" name="Session Information"/>
+	<Command category="Session" name="Set Bar Offset to Cursor"/>
+	<Command category="Session" name="Set Frames at Cursor"/>
+	<Command category="Session" name="Set Time Offset to Cursor"/>
+	<Command category="Session" name="Show in Explorer/Finder"/>
+	<Command category="Session" name="Spatial Audio Setup"/>
+	<Command category="Session" name="Update Mastering File"/>
 	<Command category="Show" name="Add Backing Track Player"/>
 	<Command category="Show" name="Add Player"/>
 	<Command category="Show" name="Add Real Instrument Player"/>
 	<Command category="Show" name="Add Setlist Item"/>
 	<Command category="Show" name="Add Virtual Instrument Player"/>
+	<Command category="Show" name="Create Backing Track from Video Audio"/>
 	<Command category="Show" name="Disable Setlist Item"/>
 	<Command category="Show" name="Duplicate Player"/>
 	<Command category="Show" name="Duplicate Setlist Item"/>
 	<Command category="Show" name="Enable Setlist Item"/>
+	<Command category="Show" name="Extend Setlist Item to Video"/>
 	<Command category="Show" name="Locate Missing Devices"/>
 	<Command category="Show" name="Loop Setlist Item"/>
 	<Command category="Show" name="Next Patch"/>
@@ -1517,33 +1564,6 @@
 	<Command category="Show" name="Toggle Playback Mode Loop / Stop at End"/>
 	<Command category="Show" name="Toggle Section Playback Mode Loop / Continue"/>
 	<Command category="Show" name="Update Patch"/>
-	<Command category="Song" name="Export Mixdown">
-		<Key name="Ctrl+E"/>
-	</Command>
-	<Command category="Song" name="Export Spatial Audio"/>
-	<Command category="Song" name="Export Stems">
-		<Key name="Ctrl+Shift+E"/>
-	</Command>
-	<Command category="Song" name="Import File">
-		<Key name="Ctrl+Shift+O"/>
-	</Command>
-	<Command category="Song" name="Import Song Data">
-		<Key name="Ctrl+Shift+I"/>
-	</Command>
-	<Command category="Song" name="Locate Missing Devices"/>
-	<Command category="Song" name="Remove Track">
-		<Key name="Shift+T"/>
-	</Command>
-	<Command category="Song" name="Remove Track and Instrument"/>
-	<Command category="Song" name="Render Click"/>
-	<Command category="Song" name="Send to Notion"/>
-	<Command category="Song" name="Set Bar Offset to Cursor"/>
-	<Command category="Song" name="Set Frames at Cursor"/>
-	<Command category="Song" name="Set Time Offset to Cursor"/>
-	<Command category="Song" name="Show in Explorer/Finder"/>
-	<Command category="Song" name="Song Information"/>
-	<Command category="Song" name="Spatial Audio Setup"/>
-	<Command category="Song" name="Update Mastering File"/>
 	<Command category="Sound Variation" name="Apply Active Variation"/>
 	<Command category="Sound Variation" name="Apply Next"/>
 	<Command category="Sound Variation" name="Apply Previous"/>
@@ -1619,6 +1639,7 @@
 	<Command category="Track" name="Add Bus for Selected Channels"/>
 	<Command category="Track" name="Add Folder Track"/>
 	<Command category="Track" name="Add Insert to Selected Channels"/>
+	<Command category="Track" name="Add Instrument and Track"/>
 	<Command category="Track" name="Add Instrument to Selected Tracks"/>
 	<Command category="Track" name="Add Instrument Track"/>
 	<Command category="Track" name="Add Layer"/>
@@ -1644,12 +1665,14 @@
 	<Command category="Track" name="Duplicate (complete)"/>
 	<Command category="Track" name="Duplicate Layer"/>
 	<Command category="Track" name="Edit"/>
-	<Command category="Track" name="Expand Envelopes"/>
+	<Command category="Track" name="Expand Automation"/>
 	<Command category="Track" name="Expand Folder Track"/>
 	<Command category="Track" name="Expand Layers"/>
 	<Command category="Track" name="Find Track">
 		<Key name="Ctrl+Alt+T"/>
 	</Command>
+	<Command category="Track" name="Freeze to Audio Track"/>
+	<Command category="Track" name="Freeze to Rendered Audio"/>
 	<Command category="Track" name="Group Selected Tracks">
 		<Key name="Ctrl+G"/>
 	</Command>
@@ -1676,7 +1699,7 @@
 	<Command category="Track" name="Select Muted Tracks"/>
 	<Command category="Track" name="Set Color of Selected Channels"/>
 	<Command category="Track" name="Set Color of Selected Tracks"/>
-	<Command category="Track" name="Show Envelopes">
+	<Command category="Track" name="Show Automation">
 		<Key name="A"/>
 	</Command>
 	<Command category="Track" name="Show in Console"/>
@@ -1689,12 +1712,10 @@
 	<Command category="Track" name="Store Track Preset"/>
 	<Command category="Track" name="Toggle Cell Playback Active"/>
 	<Command category="Track" name="Toggle Lock"/>
-	<Command category="Track" name="Transform to Audio Track"/>
-	<Command category="Track" name="Transform to Bus Channel"/>
-	<Command category="Track" name="Transform to Instrument Track"/>
-	<Command category="Track" name="Transform to Realtime Audio"/>
-	<Command category="Track" name="Transform to Rendered Audio"/>
 	<Command category="Track" name="Transpose Instrument Tracks"/>
+	<Command category="Track" name="Unfreeze to Bus Channel"/>
+	<Command category="Track" name="Unfreeze to Instrument Track"/>
+	<Command category="Track" name="Unfreeze to Realtime Audio"/>
 	<Command category="Track" name="Unpack Last Take to Layer"/>
 	<Command category="Track" name="Unpack Layers to Tracks"/>
 	<Command category="Track" name="Unpack Selected Layers To Tracks"/>
@@ -1828,6 +1849,7 @@
 	<Command category="View" name="Browser">
 		<Key name="F5"/>
 	</Command>
+	<Command category="View" name="Channel Overview"/>
 	<Command category="View" name="Chord Display"/>
 	<Command category="View" name="Chord Selector"/>
 	<Command category="View" name="Console">
@@ -1892,6 +1914,8 @@
 	<Command category="View" name="Score View"/>
 	<Command category="View" name="Scratch Pad"/>
 	<Command category="View" name="Select Macro Page"/>
+	<Command category="View" name="Show Channel Fader (Inspector)"/>
+	<Command category="View" name="Show Event Inspector"/>
 	<Command category="View" name="Show Groups (Channel List)"/>
 	<Command category="View" name="Show Groups (Track List)"/>
 	<Command category="View" name="Show Scenes (Console)"/>
@@ -1903,8 +1927,8 @@
 	<Command category="View" name="Strip Silence"/>
 	<Command category="View" name="Swap Ruler Formats"/>
 	<Command category="View" name="Switch To Project"/>
+	<Command category="View" name="Switch To Session"/>
 	<Command category="View" name="Switch To Show"/>
-	<Command category="View" name="Switch To Song"/>
 	<Command category="View" name="Time Display"/>
 	<Command category="View" name="Toggle Detached Console">
 		<Key name="Ctrl+F3"/>

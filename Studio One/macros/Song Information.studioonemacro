@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Macro title="Song Information" group="farpras" description="">
+	<CommandElement category="Song" name="Song Information">
+		<CommandArgument name="State" value=""/>
+	</CommandElement>
+</Macro>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Macro title="Toggle Start" group="farpras" description="">
+	<CommandElement category="Transport" name="Toggle Start">
+		<CommandArgument name="Pause" value=""/>
+	</CommandElement>
+</Macro>

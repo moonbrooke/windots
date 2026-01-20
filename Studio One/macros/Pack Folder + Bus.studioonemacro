@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Macro title="Pack Folder + Bus" group="farpras" description="">
+	<CommandElement category="Track" name="Pack Folder">
+		<CommandArgument name="Name" value=""/>
+	</CommandElement>
+	<CommandElement category="Track" name="Add Bus for Folder Track"/>
+</Macro>
