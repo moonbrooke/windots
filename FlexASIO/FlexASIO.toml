@@ -1,7 +1,7 @@
 backend = "Windows WASAPI"
 bufferSizeSamples = 1024
 [input]
-device = "Headphones (Realtek(R) Audio) [Loopback]"
+device = "Microphone (MIXLINE Stream)"
 suggestedLatencySeconds = 0.0
 [output]
 device = "Headphones (Realtek(R) Audio)"
