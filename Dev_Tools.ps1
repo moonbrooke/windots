@@ -20,8 +20,12 @@ function cdnvim {
     cd "$env:LOCALAPPDATA/nvim"
 }
 
-function laragon {
-    cd "$env:USERPROFILE/scoop/persist/laragon/www"
+function phps {
+    php -S localhost:8080
+}
+
+function mysqls {
+    mysqld --console
 }
 
 function gs {
