@@ -18,10 +18,6 @@
     "keybindings": 
     [
         {
-            "id": null,
-            "keys": "ctrl+tab"
-        },
-        {
             "id": "Terminal.CopyToClipboard",
             "keys": "ctrl+c"
         },
@@ -30,16 +26,12 @@
             "keys": "ctrl+shift+tab"
         },
         {
+            "id": null,
+            "keys": "ctrl+tab"
+        },
+        {
             "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
-        },
-        {
-            "id": "Terminal.PrevTab",
-            "keys": "ctrl+shift+left"
-        },
-        {
-            "id": "Terminal.DuplicatePaneAuto",
-            "keys": "alt+shift+d"
         },
         {
             "id": "Terminal.NextTab",
@@ -48,6 +40,14 @@
         {
             "id": null,
             "keys": "ctrl+shift+p"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "Terminal.PrevTab",
+            "keys": "ctrl+shift+left"
         },
         {
             "id": "Terminal.ClosePane",
@@ -157,6 +157,18 @@
                 "icon": "C:\\Users\\farpras\\Pictures\\Terminal Icons\\Bash_Logo.png",
                 "name": "Bash",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{95eff395-ba2d-5167-b1e4-d12a6aec7cb5}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{24a49352-98bb-5af2-92a8-cd12855fd5cf}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
