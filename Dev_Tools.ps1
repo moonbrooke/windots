@@ -20,6 +20,10 @@ function cdnvim {
     cd "$env:LOCALAPPDATA/nvim"
 }
 
+function laragon {
+    cd "$env:USERPROFILE/scoop/persist/laragon/www"
+}
+
 function gs {
     git status
 }
