@@ -20,14 +20,6 @@ function cdnvim {
     cd "$env:LOCALAPPDATA/nvim"
 }
 
-function phps {
-    php -S localhost:8080
-}
-
-function mysqls {
-    mysqld --console
-}
-
 function gs {
     git status
 }
