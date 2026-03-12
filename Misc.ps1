@@ -43,6 +43,11 @@ function wcd {
     warp-cli disconnect
 }
 
+function cdsteambooster {
+    cd "$env:GITHUB/steam-hour-booster"
+}
+Set-Alias cdsb cdsteambooster
+
 # Others
 Set-Alias msk musikcube
 
