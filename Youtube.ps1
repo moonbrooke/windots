@@ -9,6 +9,8 @@ function Youtube-Mp3 {
            --extract-audio `
            --audio-format mp3 `
            -o "$HOME/Downloads/Music/%(title)s.%(ext)s" `
+           --cookies-from-browser firefox `
+           --js-runtimes node `
            $Url
 }
 
@@ -18,7 +20,7 @@ function Youtube-Best {
         [string]$Url
     )
 
-    yt-dlp -o "$HOME/Downloads/Video/%(title)s-best.%(ext)s" $Url
+    yt-dlp -o "$HOME/Downloads/Video/%(title)s-best.%(ext)s" --cookies-from-browser firefox --js-runtimes node $Url
 }
 
 function Youtube-1080p {
@@ -29,6 +31,8 @@ function Youtube-1080p {
 
     yt-dlp -S "height:1080" `
            -o "$HOME/Downloads/Video/%(title)s-1080p.%(ext)s" `
+           --cookies-from-browser firefox `
+           --js-runtimes node `
            $Url
 }
 
@@ -40,6 +44,8 @@ function Youtube-720p {
 
     yt-dlp -S "height:720" `
            -o "$HOME/Downloads/Video/%(title)s-720p.%(ext)s" `
+           --cookies-from-browser firefox `
+           --js-runtimes node `
            $Url
 }
 
@@ -51,6 +57,8 @@ function Youtube-480p {
 
     yt-dlp -S "height:480" `
            -o "$HOME/Downloads/Video/%(title)s-480p.%(ext)s" `
+           --cookies-from-browser firefox `
+           --js-runtimes node `
            $Url
 }
 
