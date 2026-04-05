@@ -18,7 +18,6 @@
   "editor.lineHeight": 1.5,
   "chat.disableAIFeatures": true,
   "C_Cpp.copilotHover": "disabled",
-  "workbench.activityBar.location": "hidden",
   "editor.minimap.enabled": true,
   "git.openRepositoryInParentFolders": "never",
   "extensions.experimental.affinity": {
