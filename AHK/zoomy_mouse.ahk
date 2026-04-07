@@ -1,7 +1,12 @@
-; Mofified Version
 ; Original on https://www.autohotkey.com/boards/viewtopic.php?f=83&t=134936
 #Requires AutoHotkey v2+
 #SingleInstance Force
+
+; ==========================================
+; FIX: Make the script High-DPI aware to prevent mouse offsets on scaled monitors
+DllCall("SetThreadDpiAwarenessContext", "Ptr", -4)
+; ==========================================
+
 TraySetIcon "shell32.dll", 23
 
 F1:: Loupe.Toggle()
