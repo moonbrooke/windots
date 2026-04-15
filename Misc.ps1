@@ -44,7 +44,7 @@ function wcd {
 }
 
 function cdsteambooster {
-    cd "$env:GITHUB/steam-hour-booster"
+    cd "$env:GITHUB/shb-fork"
 }
 Set-Alias cdsb cdsteambooster
 
