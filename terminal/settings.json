@@ -15,15 +15,19 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "disabledProfileSources": 
+    [
+        "Windows.Terminal.Azure"
+    ],
     "keybindings": 
     [
         {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+c"
-        },
-        {
             "id": null,
             "keys": "ctrl+shift+tab"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
         },
         {
             "id": null,
@@ -34,12 +38,12 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "id": "Terminal.NextTab",
-            "keys": "ctrl+shift+right"
-        },
-        {
             "id": null,
             "keys": "ctrl+shift+p"
+        },
+        {
+            "id": "Terminal.NextTab",
+            "keys": "ctrl+shift+right"
         },
         {
             "id": "Terminal.DuplicatePaneAuto",
@@ -135,12 +139,6 @@
                 "source": "VSDebugConsole"
             },
             {
-                "guid": "{b000ca68-8199-5c93-ae34-ff357f51c4c3}",
-                "hidden": false,
-                "name": "archlinux",
-                "source": "Microsoft.WSL"
-            },
-            {
                 "bellStyle": "none",
                 "commandline": "C:\\Users\\farpras\\scoop\\apps\\git\\current\\bin\\bash.exe",
                 "guid": "{373be2ec-950a-4d49-b2b3-27f4bf58f8b7}",
@@ -169,6 +167,18 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{da5f1fbc-3464-55d2-bfce-d4e4f3c146ba}",
+                "hidden": false,
+                "name": "Ubuntu-24.04",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{dc06a8b0-42a9-5194-a14c-ae2b356a6abd}",
+                "hidden": false,
+                "name": "archlinux",
+                "source": "Microsoft.WSL"
             }
         ]
     },
@@ -323,5 +333,5 @@
     "trimPaste": false,
     "useAcrylicInTabRow": false,
     "warning.largePaste": false,
-    "warning.multiLinePaste": false
+    "warning.multiLinePaste": "never"
 }
