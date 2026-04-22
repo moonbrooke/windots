@@ -61,5 +61,9 @@ function vsdc {
     & "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\VsDevCmd.bat" -arch=x64
 }
 
+function llm {
+    & "D:\LLM\textgen-4.5.2\start_windows.bat"
+}
+
 # Other dev tools
 Set-Alias cat bat
