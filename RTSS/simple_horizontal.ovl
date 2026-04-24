@@ -1,6 +1,6 @@
 [Master]
 Implementation=2
-FontFace=FiraCode Nerd Font
+FontFace=Unispace
 FontHeight=-9
 FontWeight=400
 ZoomRatio=2
@@ -12,7 +12,7 @@ LockUserSettings=0
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=9
+Sources=11
 Tables=0
 Layers=1
 [Source0]
@@ -96,6 +96,20 @@ Provider=MSI Afterburner
 SrcId=00000055
 Gpu=FFFFFFFF
 SrcName=
+[Source9]
+Name=CPU temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU temperature
+[Source10]
+Name=GPU1 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 temperature
 [Layer0]
 Name=stats
 Text=FPS: <FR> (AVG: <FRAVG> / 1%LOW: <FR10L>) / GPU: %GPU1 usage%% (%GPU1 memory usage% MB/%GPU1 temperature% °C) / CPU: %CPU usage%% (%CPU temperature% °C) / RAM: %RAM usage% MB
