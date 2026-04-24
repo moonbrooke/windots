@@ -12,7 +12,7 @@ LockUserSettings=0
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=11
+Sources=15
 Tables=0
 Layers=1
 [Source0]
@@ -110,6 +110,34 @@ Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature
+[Source11]
+Name=CPU usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU usage
+[Source12]
+Name=RAM usage
+Units=MB
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage
+[Source13]
+Name=GPU1 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 usage
+[Source14]
+Name=GPU1 memory usage
+Units=MB
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 memory usage
 [Layer0]
 Name=stats
 Text=FPS: <FR> (AVG: <FRAVG> / 1%LOW: <FR10L>) / GPU: %GPU1 usage%% (%GPU1 memory usage% MB/%GPU1 temperature% °C) / CPU: %CPU usage%% (%CPU temperature% °C) / RAM: %RAM usage% MB
