@@ -41,5 +41,8 @@ function prompt {
     }
 
     Write-Host "$" -ForegroundColor Cyan -NoNewline
-    return " "
+    
+    $esc = [char]27
+    
+    return "$esc]9;9;`"$cwd`"$esc\ "
 }
