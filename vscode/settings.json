@@ -16,6 +16,7 @@
   "editor.scrollbar.horizontalScrollbarSize": 8,
   "editor.scrollbar.verticalScrollbarSize": 8,
   "editor.lineHeight": 1.5,
+  "editor.stickyScroll.enabled": false,
   "chat.disableAIFeatures": true,
   "C_Cpp.copilotHover": "disabled",
   "editor.minimap.enabled": true,
