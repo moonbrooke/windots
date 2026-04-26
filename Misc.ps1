@@ -87,3 +87,32 @@ function adlc {
 function adrm {
     cd $env:USERPROFILE/AppData/Roaming
 }
+
+function link {
+    param (
+        [Parameter(Mandatory=$true)]
+        [string]$L,
+
+        [Parameter(Mandatory=$true)]
+        [string]$T
+    )
+
+    if (-Not (Test-Path -Path $T)) {
+        Write-Warning "Target path '$T' does not exist."
+        return
+    }
+
+    if (Test-Path -Path $L) {
+        Write-Warning "The folder '$L' already exists! Please delete or rename it first."
+        return
+    }
+
+    try {
+        New-Item -ItemType SymbolicLink -Path $L -Target $T | Out-Null
+        Write-Host "Success: Symlink created!" -ForegroundColor Green
+        Write-Host "$L <<===>> $T" -ForegroundColor Cyan
+    }
+    catch {
+        Write-Error "Failed to create symbolic link. Did you remember to run PowerShell as Administrator?"
+    }
+}
