@@ -16,6 +16,10 @@ function windots {
     cd "$env:WINDOTS"
 }
 
+function cdhtml {
+    cd "$env:GITHUB/test/html"
+}
+
 function cdnvim {
     cd "$env:LOCALAPPDATA/nvim"
 }
