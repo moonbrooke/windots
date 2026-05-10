@@ -28,7 +28,6 @@ function which {
     where.exe "$Bin"
 }
 
-
 # Teldrive
 function tdr {
     teldrive run -c "$env:USERPROFILE\.installer\bin\config.toml"
@@ -41,6 +40,11 @@ function wcc {
 
 function wcd {
     warp-cli disconnect
+}
+
+# Weather
+function wttr {
+    curl wttr.in/Tangerang?format=2
 }
 
 function cdsteambooster {
