@@ -23,7 +23,7 @@
     [
         {
             "id": null,
-            "keys": "ctrl+shift+tab"
+            "keys": "ctrl+tab"
         },
         {
             "id": "Terminal.CopyToClipboard",
@@ -31,27 +31,27 @@
         },
         {
             "id": null,
-            "keys": "ctrl+tab"
+            "keys": "ctrl+shift+tab"
         },
         {
             "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
         },
         {
-            "id": null,
-            "keys": "ctrl+shift+p"
-        },
-        {
-            "id": "Terminal.NextTab",
-            "keys": "ctrl+shift+right"
+            "id": "Terminal.PrevTab",
+            "keys": "ctrl+shift+left"
         },
         {
             "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
         },
         {
-            "id": "Terminal.PrevTab",
-            "keys": "ctrl+shift+left"
+            "id": "Terminal.NextTab",
+            "keys": "ctrl+shift+right"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+p"
         },
         {
             "id": "Terminal.ClosePane",
@@ -117,6 +117,7 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "colorScheme": "Tokyo Night",
                 "commandline": "\"C:\\Users\\farpras\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\" -nologo",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
