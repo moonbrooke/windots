@@ -42,11 +42,6 @@ function wcd {
     warp-cli disconnect
 }
 
-# Weather
-function wttr {
-    curl wttr.in/Tangerang?format=2
-}
-
 function cdsteambooster {
     cd "$env:GITHUB/shb-fork"
 }
