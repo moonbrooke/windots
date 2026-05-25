@@ -1,6 +1,6 @@
 # local server
 function srv {
-    simple-http-server.exe -i --ip 127.0.0.1
+    simple-http-server.exe -i -o --ip 127.0.0.1
 }
 
 function serve {
