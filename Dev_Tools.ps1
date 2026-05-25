@@ -1,3 +1,12 @@
+# local server
+function srv {
+    simple-http-server.exe -i --ip 127.0.0.1
+}
+
+function serve {
+    simple-http-server.exe --ip 127.0.0.1
+}
+
 # go
 function gocc {
     go clean -cache
