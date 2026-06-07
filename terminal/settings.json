@@ -26,12 +26,12 @@
             "keys": "ctrl+tab"
         },
         {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+c"
-        },
-        {
             "id": null,
             "keys": "ctrl+shift+tab"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
         },
         {
             "id": "Terminal.FindText",
@@ -46,12 +46,12 @@
             "keys": "alt+shift+d"
         },
         {
-            "id": "Terminal.NextTab",
-            "keys": "ctrl+shift+right"
-        },
-        {
             "id": null,
             "keys": "ctrl+shift+p"
+        },
+        {
+            "id": "Terminal.NextTab",
+            "keys": "ctrl+shift+right"
         },
         {
             "id": "Terminal.ClosePane",
@@ -170,13 +170,7 @@
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{da5f1fbc-3464-55d2-bfce-d4e4f3c146ba}",
-                "hidden": false,
-                "name": "Ubuntu-24.04",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{dc06a8b0-42a9-5194-a14c-ae2b356a6abd}",
+                "guid": "{99403d85-d645-5a87-82cf-d9c0aab01958}",
                 "hidden": false,
                 "name": "archlinux",
                 "source": "Microsoft.WSL"
