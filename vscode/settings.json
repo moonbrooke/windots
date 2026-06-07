@@ -27,5 +27,6 @@
   "extensions.ignoreRecommendations": true,
   "git.confirmSync": false,
   "workbench.secondarySideBar.showLabels": false,
-  "workbench.activityBar.compact": true
+  "workbench.activityBar.compact": true,
+  "liveServer.settings.donotShowInfoMsg": true
 }
