@@ -42,6 +42,22 @@ function wcd {
     warp-cli disconnect
 }
 
+# NextDNS
+function Start-NextDNS {
+    sudo nextdns start && sudo nextdns activate
+}
+Set-Alias -Name ndstart -Value Start-NextDNS
+
+function Stop-NextDNS {
+    sudo nextdns deactivate && sudo nextdns stop
+}
+Set-Alias -Name ndstop -Value Stop-NextDNS
+
+function Status-NextDNS {
+    sudo nextdns status
+}
+Set-Alias -Name ndstatus -Value Status-NextDNS
+
 function cdsteambooster {
     cd "$env:GITHUB/shb-fork"
 }
