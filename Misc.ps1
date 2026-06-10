@@ -43,20 +43,31 @@ function wcd {
 }
 
 # NextDNS
-function Start-NextDNS {
-    sudo nextdns start && sudo nextdns activate
+function ndstart {
+    Write-Host "🔄 Starting NextDNS service..." -ForegroundColor Gray
+    sudo nextdns start | Out-Null
+    
+    Write-Host "✅ Done!" -ForegroundColor Green
+    Write-Host "🔄 Activating NextDNS resolver..." -ForegroundColor Gray
+    sudo nextdns activate | Out-Null
+    
+    Write-Host "🚀 NextDNS is up and running!" -ForegroundColor Green
 }
-Set-Alias -Name ndstart -Value Start-NextDNS
 
-function Stop-NextDNS {
-    sudo nextdns deactivate && sudo nextdns stop
+function ndstop {
+    Write-Host "🔄 Deactivating NextDNS resolver..." -ForegroundColor Gray
+    sudo nextdns deactivate | Out-Null
+    
+    Write-Host "✅ Done!" -ForegroundColor Green
+    Write-Host "🔄 Stopping NextDNS service..." -ForegroundColor Gray
+    sudo nextdns stop | Out-Null
+    
+    Write-Host "💀 NextDNS has been stopped." -ForegroundColor Green
 }
-Set-Alias -Name ndstop -Value Stop-NextDNS
 
-function Status-NextDNS {
+function ndstatus {
     sudo nextdns status
 }
-Set-Alias -Name ndstatus -Value Status-NextDNS
 
 function cdsteambooster {
     cd "$env:GITHUB/shb-fork"
