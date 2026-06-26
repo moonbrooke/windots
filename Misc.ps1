@@ -43,7 +43,7 @@ function wcd {
 }
 
 # NextDNS
-function ndstart {
+function ndst {
     Write-Host "🔄 Starting NextDNS service..." -ForegroundColor Gray
     sudo nextdns start | Out-Null
     
@@ -54,7 +54,7 @@ function ndstart {
     Write-Host "🚀 NextDNS is up and running!" -ForegroundColor Green
 }
 
-function ndstop {
+function ndsp {
     Write-Host "🔄 Deactivating NextDNS resolver..." -ForegroundColor Gray
     sudo nextdns deactivate | Out-Null
     
@@ -65,7 +65,7 @@ function ndstop {
     Write-Host "💀 NextDNS has been stopped." -ForegroundColor Green
 }
 
-function ndstatus {
+function ndss {
     sudo nextdns status
 }
 
