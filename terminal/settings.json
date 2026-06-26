@@ -26,12 +26,12 @@
             "keys": "ctrl+tab"
         },
         {
-            "id": null,
-            "keys": "ctrl+shift+tab"
-        },
-        {
             "id": "Terminal.CopyToClipboard",
             "keys": "ctrl+c"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+tab"
         },
         {
             "id": "Terminal.FindText",
@@ -46,12 +46,12 @@
             "keys": "alt+shift+d"
         },
         {
-            "id": null,
-            "keys": "ctrl+shift+p"
-        },
-        {
             "id": "Terminal.NextTab",
             "keys": "ctrl+shift+right"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+p"
         },
         {
             "id": "Terminal.ClosePane",
@@ -170,9 +170,9 @@
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{99403d85-d645-5a87-82cf-d9c0aab01958}",
+                "guid": "{a54a3c9a-a2fb-5f69-8bba-6717b09de954}",
                 "hidden": false,
-                "name": "archlinux",
+                "name": "Ubuntu",
                 "source": "Microsoft.WSL"
             }
         ]
