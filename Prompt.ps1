@@ -1,6 +1,15 @@
 function prompt {
     $cwd = (Get-Location).Path
 
+    $homePath = $HOME.TrimEnd([char[]]"\/")
+    if ($cwd -eq $HOME) {
+        $display = "~"
+    } elseif ($cwd.StartsWith($homePath + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase)) {
+        $display = "~" + $cwd.Substring($homePath.Length)
+    } else {
+        $display = $cwd
+    }
+
     $gitInfo = ""
     $dirty = $false
     $unpushed = $false
@@ -26,7 +35,7 @@ function prompt {
         }
     } catch {}
 
-    Write-Host "󰉋" $cwd -ForegroundColor Cyan -NoNewline
+    Write-Host "󰉋" $display -ForegroundColor Cyan -NoNewline
     if ($gitInfo) {
         Write-Host $gitInfo -ForegroundColor Magenta -NoNewline
         if ($dirty) {
@@ -44,5 +53,5 @@ function prompt {
     
     $esc = [char]27
     
-    return "$esc]9;9;`"$cwd`"$esc\ "
+    return "$esc]9;9;`"$display`"$esc\ "
 }
