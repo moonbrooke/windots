@@ -52,6 +52,15 @@ function prompt {
     Write-Host "$" -ForegroundColor Cyan -NoNewline
     
     $esc = [char]27
-    
-    return "$esc]9;9;`"$display`"$esc\ "
+
+    # OSC 9;9 tells Windows Terminal the current directory (used for
+    # duplicate tab/pane). It must be an absolute path — never the
+    # "~"-abbreviated $display, otherwise Terminal tries to open a
+    # literal "~\.config" directory and fails with 0x8007010b.
+    $loc = Get-Location
+    if ($loc.Provider.Name -eq 'FileSystem') {
+        $oscPath = $loc.ProviderPath
+        return "$esc]9;9;`"$oscPath`"$esc\ "
+    }
+    return " "
 }
