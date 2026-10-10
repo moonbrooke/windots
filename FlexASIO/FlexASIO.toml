@@ -1,8 +1,8 @@
 backend = "Windows WASAPI"
 bufferSizeSamples = 1024
 [input]
-device = "Headphones (Realtek(R) Audio) [Loopback]"
+device = "Headphones (2- Realtek(R) Audio) [Loopback]"
 suggestedLatencySeconds = 0.0
 [output]
-device = "Headphones (Realtek(R) Audio)"
+device = "Headphones (2- Realtek(R) Audio)"
 suggestedLatencySeconds = 0.0
