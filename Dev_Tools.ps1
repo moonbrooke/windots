@@ -53,6 +53,14 @@ function gaa {
     git add *
 }
 
+function gd {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$Path
+    )
+    git diff "$Path"
+}
+
 function gpsh {
     git push
 }
