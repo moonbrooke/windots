@@ -54,11 +54,8 @@ function gaa {
 }
 
 function gd {
-    param (
-        [Parameter(Mandatory = $true)]
-        [string]$Path
-    )
-    git diff "$Path"
+    param([string]$query = ".")
+    git diff $query
 }
 
 function gpsh {
