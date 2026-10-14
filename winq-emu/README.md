@@ -1,7 +1,9 @@
 # WINQ-EMU Stuff
 
-- `void-install.bat`: Example script to install new distro.
-- `void.bat`: Example script to launch the guest distro after installation with shared folder enabled.
+Examples of `.bat` scripts to launch [WINQ-EMU](https://github.com/cmspam/winq-emu) VM. The examples have 6 CPUs with 4GB of RAM setup launched via patched qemu binary.
+
+- `void-install.bat`: Run this to install new guest distro.
+- `void.bat`: Run this to launch the installed guest distro. This script expects a shared folder located at `D:/VM/Shared`.
 
 To enable shared folder in guest distro:
 ```bash
