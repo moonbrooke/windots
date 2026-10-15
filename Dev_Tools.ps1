@@ -50,7 +50,7 @@ function ga {
 }
 
 function gaa {
-    git add *
+    git add -A
 }
 
 function gd {
@@ -84,4 +84,7 @@ function llm {
 }
 
 # Other dev tools
+# NOTE: interactive `cat` is rewritten to coreutils' cat.cmd by the profile's
+# PSConsoleHostReadLine hook before alias resolution, so this alias only applies
+# outside that path (e.g. from scripts / functions).
 Set-Alias cat bat

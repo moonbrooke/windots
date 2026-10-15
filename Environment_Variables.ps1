@@ -1,3 +1,3 @@
 # ENVIRONMENT VARIABLES
-$env:GITHUB         = "C:\GitHub\"
-$env:WINDOTS        = "C:\GitHub\windots\"
+$env:GITHUB         = "C:\GitHub"
+$env:WINDOTS        = "C:\GitHub\windots"

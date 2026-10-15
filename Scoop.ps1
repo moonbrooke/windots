@@ -1,21 +1,21 @@
 # scoop
 function scu {
-    param([string]$query = "")
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     scoop update $query
 }
 
 function scs {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     scoop search $query
 }
 
 function sci {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     scoop install $query
 }
 
 function scun {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     scoop uninstall $query
 }
 
@@ -36,22 +36,22 @@ function scst {
 }
 
 function scin {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     scoop info $query
 }
 
 function sccu {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     scoop cleanup $query
 }
 
 function scwh {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     scoop which $query
 }
 
 function scd {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     scoop depends $query
 }
 

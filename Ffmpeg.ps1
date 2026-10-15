@@ -1,10 +1,28 @@
 # ffmpeg
+
+# Resolve and validate an input path so downstream GetDirectoryName/Join-Path
+# never receive an empty directory (which happens for bare filenames).
+function Resolve-FfmpegInput {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory)]
+        [string]$InputFile
+    )
+
+    if (-not (Test-Path -LiteralPath $InputFile -PathType Leaf)) {
+        throw "Input file not found: $InputFile"
+    }
+
+    (Resolve-Path -LiteralPath $InputFile).ProviderPath
+}
+
 function Ffmpeg-AudioToMP3 {
     param (
         [Parameter(Mandatory)]
         [string]$InputFile
     )
 
+    $InputFile = Resolve-FfmpegInput -InputFile $InputFile
     $BaseName = [System.IO.Path]::GetFileNameWithoutExtension($InputFile)
     $Directory = [System.IO.Path]::GetDirectoryName($InputFile)
     $OutputFile = Join-Path $Directory "$BaseName-ffmpeg.mp3"
@@ -26,6 +44,7 @@ function Ffmpeg-VideoToH265 {
         [string]$MaxBitrate = "12000k"
     )
 
+    $InputFile = Resolve-FfmpegInput -InputFile $InputFile
     $BaseName = [System.IO.Path]::GetFileNameWithoutExtension($InputFile)
     $Directory = [System.IO.Path]::GetDirectoryName($InputFile)
     $OutputFile = Join-Path $Directory "$BaseName-ffmpeg.mp4"
@@ -46,11 +65,14 @@ function Ffmpeg-ExtractAudio {
         [string]$InputFile
     )
 
+    $InputFile = Resolve-FfmpegInput -InputFile $InputFile
     $BaseName = [System.IO.Path]::GetFileNameWithoutExtension($InputFile)
     $Directory = [System.IO.Path]::GetDirectoryName($InputFile)
     $OutputFile = Join-Path $Directory "$BaseName-ffmpeg.mp3"
 
-    ffmpeg -i $InputFile -vn -acodec copy $OutputFile
+    # Re-encode to MP3. The previous `-acodec copy` could not satisfy the .mp3
+    # container for non-MP3 sources (AAC/Opus/...) and produced broken output.
+    ffmpeg -i $InputFile -vn -c:a libmp3lame -b:a 320k $OutputFile
 }
 
 Set-Alias convertmp3 Ffmpeg-AudioToMP3

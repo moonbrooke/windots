@@ -1,4 +1,7 @@
 # EZA
+# NOTE: the profile's coreutils hook rewrites interactive `ls` to coreutils
+# ls.cmd before alias resolution, so this alias is shadowed at the prompt.
+# `ll` (below) is not a coreutils name and always resolves to eza.
 function ezadf {
     eza --group-directories-first
 }
@@ -99,9 +102,19 @@ function winutil {
 # Set-Alias pwshlink Link-PwshProfile
 
 function Dictionary {
-    param([string]$Word)
+    param(
+        [Parameter(Mandatory)]
+        [string]$Word
+    )
+
     $url = "https://api.dictionaryapi.dev/api/v2/entries/en/$Word"
-    $response = Invoke-RestMethod -Uri $url -Method Get
+    try {
+        $response = Invoke-RestMethod -Uri $url -Method Get -ErrorAction Stop
+    } catch {
+        Write-Warning "Could not find a definition for '$Word'."
+        return
+    }
+
     $response[0].meanings[0].definitions[0].definition
 }
 Set-Alias dict Dictionary

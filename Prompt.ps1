@@ -1,5 +1,6 @@
 function prompt {
-    $cwd = (Get-Location).Path
+    $loc = Get-Location
+    $cwd = $loc.Path
 
     $homePath = $HOME.TrimEnd([char[]]"\/")
     if ($cwd -eq $HOME) {
@@ -14,23 +15,25 @@ function prompt {
     $dirty = $false
     $unpushed = $false
     try {
-        $gitDir = git rev-parse --show-toplevel 2>$null
-        if ($gitDir) {
-            $repoName = Split-Path $gitDir -Leaf
-            $branch   = git rev-parse --abbrev-ref HEAD 2>$null
-
-            $status = git status --porcelain 2>$null
-            if ($status) { $dirty = $true }
-
-            try {
-                $ahead = git rev-list "@{u}..HEAD" 2>$null
-                if ($ahead) { $unpushed = $true }
-            } catch {}
-
+        # A single `git status --porcelain=v2 --branch` replaces the previous
+        # four `git` calls (rev-parse, rev-parse, status, rev-list).
+        $status = git status --porcelain=v2 --branch 2>$null
+        if ($status) {
+            $branch = ""
+            foreach ($line in $status) {
+                if ($line.StartsWith('# branch.head ')) {
+                    $branch = $line.Substring('# branch.head '.Length).Trim()
+                } elseif ($line.StartsWith('# branch.ab ')) {
+                    if ($line -notmatch '\+0\b') { $unpushed = $true }
+                } elseif (-not $line.StartsWith('#')) {
+                    $dirty = $true
+                }
+            }
+            # `rev-parse --abbrev-ref` reports "HEAD" when detached; keep that
+            # wording rather than porcelain's "(detached)" token.
+            if ($branch -eq '(detached)') { $branch = 'HEAD' }
             if ($branch) {
                 $gitInfo = "  $branch"
-            } else {
-                $gitInfo = " 󰊢 $repoName"
             }
         }
     } catch {}
@@ -44,20 +47,17 @@ function prompt {
         if ($unpushed) {
             Write-Host " [󰁝]" -ForegroundColor Green -NoNewline
         }
-        Write-Host ""
-    } else {
-        Write-Host ""
     }
+    Write-Host ""
 
     Write-Host "$" -ForegroundColor Cyan -NoNewline
-    
+
     $esc = [char]27
 
     # OSC 9;9 tells Windows Terminal the current directory (used for
-    # duplicate tab/pane). It must be an absolute path — never the
+    # duplicate tab/pane). It must be an absolute path - never the
     # "~"-abbreviated $display, otherwise Terminal tries to open a
     # literal "~\.config" directory and fails with 0x8007010b.
-    $loc = Get-Location
     if ($loc.Provider.Name -eq 'FileSystem') {
         $oscPath = $loc.ProviderPath
         return "$esc]9;9;`"$oscPath`"$esc\ "

@@ -205,17 +205,19 @@ function PSConsoleHostReadLine {
 # DO NOT MODIFY -- coreutils -- 60b36fc6-2d59-49df-be51-28dd2f4c3c9a
 
 # Import Env. Variables
-. "$env:USERPROFILE\Documents\PowerShell\Environment_Variables.ps1"
-. "$env:USERPROFILE\Documents\PowerShell\Dev_Tools.ps1"
-. "$env:USERPROFILE\Documents\PowerShell\Ffmpeg.ps1"
-. "$env:USERPROFILE\Documents\PowerShell\Scoop.ps1"
-. "$env:USERPROFILE\Documents\PowerShell\Choco.ps1"
-. "$env:USERPROFILE\Documents\PowerShell\Misc.ps1"
-. "$env:USERPROFILE\Documents\PowerShell\Youtube.ps1"
+# Resolve siblings relative to this profile so it works regardless of where the
+# link lives (the .bat linkers place it under Documents\PowerShell).
+. (Join-Path $PSScriptRoot 'Environment_Variables.ps1')
+. (Join-Path $PSScriptRoot 'Dev_Tools.ps1')
+. (Join-Path $PSScriptRoot 'Ffmpeg.ps1')
+. (Join-Path $PSScriptRoot 'Scoop.ps1')
+. (Join-Path $PSScriptRoot 'Choco.ps1')
+. (Join-Path $PSScriptRoot 'Misc.ps1')
+. (Join-Path $PSScriptRoot 'Youtube.ps1')
 
 # ALIAS
 Set-Alias c Clear-Host
-Set-Alias stow "$PSScriptRoot\Stow.ps1"
+Set-Alias stow (Join-Path $PSScriptRoot 'Stow.ps1')
 
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.
@@ -231,4 +233,4 @@ if (Test-Path($ChocolateyProfile)) {
 # Invoke-Expression (&starship init powershell)
 
 # Custom PowerShell Prompt 
-. "$env:USERPROFILE\Documents\PowerShell\Prompt.ps1"
+. (Join-Path $PSScriptRoot 'Prompt.ps1')

@@ -1,30 +1,30 @@
-# scoop
+# choco
 function ccu {
     choco outdated
 }
 
 function ccf {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     choco find $query
 }
 
 function ccs {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     choco search $query
 }
 
 function cci {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     choco install $query
 }
 
 function ccun {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     choco uninstall $query
 }
 
 function ccup {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     choco upgrade $query
 }
 
@@ -33,7 +33,7 @@ function ccl {
 }
 
 function ccin {
-    param([string]$query)
+    param([Parameter(ValueFromRemainingArguments)][string[]]$query = @())
     choco info $query
 }
 
