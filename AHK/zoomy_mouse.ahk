@@ -1,9 +1,13 @@
-; Original on https://www.autohotkey.com/boards/viewtopic.php?f=83&t=134936
+; Original: https://www.autohotkey.com/boards/viewtopic.php?f=83&t=134936
+; F1                : Toggle zoom
+; Shift+F1          : Reset settings
+; Shift+Scroll      : Increase/decrease zoom factor 
+; Ctrl+Shift+Scroll : Increase/decrease lens size
 #Requires AutoHotkey v2+
 #SingleInstance Force
 
 ; ==========================================
-; FIX: Make the script High-DPI aware to prevent mouse offsets on scaled monitors
+; Hi-DPI fix
 DllCall("SetThreadDpiAwarenessContext", "Ptr", -4)
 ; ==========================================
 
