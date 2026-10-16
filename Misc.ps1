@@ -23,13 +23,13 @@ function Remove-FolderForce {
 Set-Alias rmdir Remove-FolderForce
 
 # Which command
-function which {
-    param (
-        [Parameter(Mandatory = $true)]
-        [string]$Bin
-    )
-    where.exe "$Bin"
-}
+# function which {
+#     param (
+#         [Parameter(Mandatory = $true)]
+#         [string]$Bin
+#     )
+#     where.exe "$Bin"
+# }
 
 # Teldrive
 function tdr {
