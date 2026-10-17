@@ -87,10 +87,11 @@
             "bellStyle": "none",
             "colorScheme": "Tokyo Night",
             "cursorShape": "vintage",
+            "experimental.retroTerminalEffect": false,
             "font":
             {
-                "face": "CaskaydiaCove Nerd Font Mono",
-                "weight": "medium"
+                "face": "IosevkaTerm Nerd Font Mono",
+                "weight": "semi-bold"
             },
             "opacity": 100,
             "scrollbarState": "hidden",
