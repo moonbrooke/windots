@@ -50,7 +50,7 @@ function ndst {
     Write-Host "🔄 Starting NextDNS service..." -ForegroundColor Gray
     sudo nextdns start | Out-Null
     
-    Write-Host "✅ Done!" -ForegroundColor Green
+    Write-Host "👌 Done!" -ForegroundColor Green
     Write-Host "🔄 Activating NextDNS resolver..." -ForegroundColor Gray
     sudo nextdns activate | Out-Null
     
@@ -61,7 +61,7 @@ function ndsp {
     Write-Host "🔄 Deactivating NextDNS resolver..." -ForegroundColor Gray
     sudo nextdns deactivate | Out-Null
     
-    Write-Host "✅ Done!" -ForegroundColor Green
+    Write-Host "👌 Done!" -ForegroundColor Green
     Write-Host "🔄 Stopping NextDNS service..." -ForegroundColor Gray
     sudo nextdns stop | Out-Null
     
