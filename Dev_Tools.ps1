@@ -58,6 +58,11 @@ function gd {
     git diff $query
 }
 
+function grs {
+    param([string]$query = ".")
+    git restore $query
+}
+
 function gpsh {
     git push
 }
