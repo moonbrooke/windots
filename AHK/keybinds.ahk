@@ -54,6 +54,10 @@ ScriptDir()
 ; Win + W = Launch Microsoft Edge
 #w::Run("msedge.exe")
 
+; Win + J = Launch Takoboto (Japanese dictionary, Store app)
+; The AUMID re-activates the running instance instead of starting a second one
+#j::Run("shell:AppsFolder\32064Takoboto.TakobotoJapaneseDictionary_9b12gkevbv5ht!App")
+
 ; Win + Shift + Z = Launch zoomy_mouse.ahk
 ; zoomy_mouse.ahk uses #SingleInstance Force, so this reloads it if already running
 #+z::Run(ScriptDir() "\zoomy_mouse.ahk")
