@@ -61,6 +61,7 @@ ScriptDir()
 ; Alt + 1 / Alt + 2 = Type email from untracked keybinds.local.ini
 !1::TypeEmail(1)
 !2::TypeEmail(2)
+!3::TypeEmail(3)
 
 TypeEmail(n)
 {
