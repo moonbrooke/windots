@@ -8,6 +8,17 @@ My custom Windows keybinds.
 
 - `Windows + Enter`: Launch Windows Terminal
 - `Windows + Q`: Quit current active window
+- `Windows + W`: Launch Microsoft Edge
+- `Alt + 1`: Type first email
+- `Alt + 2`: Type second email
+
+Emails are not stored in this repo. Create `AHK/keybinds.local.ini` (gitignored):
+
+```ini
+[emails]
+1=you@example.com
+2=other@example.com
+```
 
 ### zoomy_mouse
 
