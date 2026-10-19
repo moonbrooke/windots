@@ -37,6 +37,10 @@ function laragon {
     cd "D:/Dev/PHP"
 }
 
+function cdstartup {
+    cd "$env:USERPROFILE/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
+}
+
 function gs {
     git status
 }
