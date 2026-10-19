@@ -9,6 +9,7 @@ My custom Windows keybinds.
 - `Windows + Enter`: Launch Windows Terminal
 - `Windows + Q`: Quit current active window
 - `Windows + W`: Launch Microsoft Edge
+- `Windows + Shift + Z`: Launch `zoomy_mouse.ahk`
 - `Alt + 1`: Type first email
 - `Alt + 2`: Type second email
 
