@@ -127,6 +127,10 @@ function adrm {
     cd $env:USERPROFILE/AppData/Roaming
 }
 
+function ff {
+    fastfetch
+}
+
 function link {
     param (
         [Parameter(Mandatory=$true)]
