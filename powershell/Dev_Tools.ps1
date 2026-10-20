@@ -41,10 +41,6 @@ function cdstartup {
     cd "$env:USERPROFILE/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 }
 
-function .. {
-    cd ..
-}
-
 function gs {
     git status
 }

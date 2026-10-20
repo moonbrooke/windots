@@ -208,6 +208,7 @@ function PSConsoleHostReadLine {
 # Resolve siblings relative to this profile so it works regardless of where the
 # link lives (the .bat linkers place it under Documents\PowerShell).
 . (Join-Path $PSScriptRoot 'Environment_Variables.ps1')
+. (Join-Path $PSScriptRoot 'General.ps1')
 . (Join-Path $PSScriptRoot 'Dev_Tools.ps1')
 . (Join-Path $PSScriptRoot 'Ffmpeg.ps1')
 . (Join-Path $PSScriptRoot 'Scoop.ps1')
