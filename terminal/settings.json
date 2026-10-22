@@ -24,7 +24,7 @@
     [
         {
             "id": null,
-            "keys": "ctrl+tab"
+            "keys": "ctrl+shift+tab"
         },
         {
             "id": "Terminal.CopyToClipboard",
@@ -32,27 +32,27 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+tab"
+            "keys": "ctrl+tab"
         },
         {
             "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
         },
         {
-            "id": "Terminal.PrevTab",
-            "keys": "ctrl+shift+left"
-        },
-        {
-            "id": "Terminal.DuplicatePaneAuto",
-            "keys": "alt+shift+d"
+            "id": null,
+            "keys": "ctrl+shift+p"
         },
         {
             "id": "Terminal.NextTab",
             "keys": "ctrl+shift+right"
         },
         {
-            "id": null,
-            "keys": "ctrl+shift+p"
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "Terminal.PrevTab",
+            "keys": "ctrl+shift+left"
         },
         {
             "id": "Terminal.ClosePane",
@@ -241,7 +241,7 @@
         }
     ],
     "showTabsFullscreen": false,
-    "tabWidthMode": "compact",
+    "tabWidthMode": "equal",
     "theme": "Tokyo Night",
     "themes":
     [
