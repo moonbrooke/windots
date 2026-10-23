@@ -25,6 +25,22 @@
                 "stdio"
             ],
             "enabled": true
+        },
+        "godot": {
+            "type": "local",
+            "command": [
+                "cmd.exe",
+                "/d",
+                "/c",
+                "npx",
+                "-y",
+                "@coding-solo/godot-mcp"
+            ],
+            "environment": {
+                "GODOT_PATH": "C:\\Users\\farpras\\scoop\\shims\\godot.exe",
+                "DEBUG": "true"
+            },
+            "enabled": true
         }
     }
 }
