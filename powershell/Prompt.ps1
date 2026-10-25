@@ -12,7 +12,8 @@ function prompt {
     }
 
     $gitInfo = ""
-    $dirty = $false
+    $staged = $false
+    $unstaged = $false
     $unpushed = $false
     try {
         # A single `git status --porcelain=v2 --branch` replaces the previous
@@ -25,8 +26,13 @@ function prompt {
                     $branch = $line.Substring('# branch.head '.Length).Trim()
                 } elseif ($line.StartsWith('# branch.ab ')) {
                     if ($line -notmatch '\+0\b') { $unpushed = $true }
-                } elseif (-not $line.StartsWith('#')) {
-                    $dirty = $true
+                } elseif ($line.StartsWith('?')) {
+                    # Untracked files count as unstaged work.
+                    $unstaged = $true
+                } elseif ($line -match '^[12u] (.)(.)') {
+                    # Porcelain v2: X is the staged state, Y the worktree state.
+                    if ($Matches[1] -ne '.') { $staged = $true }
+                    if ($Matches[2] -ne '.') { $unstaged = $true }
                 }
             }
             # `rev-parse --abbrev-ref` reports "HEAD" when detached; keep that
@@ -41,8 +47,11 @@ function prompt {
     Write-Host "󰉋" $display -ForegroundColor Cyan -NoNewline
     if ($gitInfo) {
         Write-Host $gitInfo -ForegroundColor Magenta -NoNewline
-        if ($dirty) {
+        if ($unstaged) {
             Write-Host " [*]" -ForegroundColor Red -NoNewline
+        }
+        if ($staged) {
+            Write-Host " [*]" -ForegroundColor Yellow -NoNewline
         }
         if ($unpushed) {
             Write-Host " [󰁝]" -ForegroundColor Green -NoNewline
