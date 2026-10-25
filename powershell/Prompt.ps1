@@ -47,6 +47,9 @@ function prompt {
     Write-Host "󰉋" $display -ForegroundColor Cyan -NoNewline
     if ($gitInfo) {
         Write-Host $gitInfo -ForegroundColor Magenta -NoNewline
+        if (!$unstaged -and !$staged -and !$unpushed) {
+            Write-Host " 󰄬" -ForegroundColor Green -NoNewline
+        }
         if ($unstaged) {
             Write-Host " [*]" -ForegroundColor Red -NoNewline
         }
