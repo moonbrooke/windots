@@ -29,6 +29,10 @@ function cdhtml {
     cd "$env:GITHUB/test/html"
 }
 
+function cdtest {
+    cd "$env:GITHUB/test"
+}
+
 function cdnvim {
     cd "$env:LOCALAPPDATA/nvim"
 }
