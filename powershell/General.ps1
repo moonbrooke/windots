@@ -39,3 +39,10 @@ function ff {
     fastfetch
 }
 
+function gfh {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Path
+    )
+    Get-FileHash $Path
+}
