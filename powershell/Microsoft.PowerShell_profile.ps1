@@ -230,8 +230,10 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
+# Custom PowerShell Prompt 
+. (Join-Path $PSScriptRoot 'Prompt.ps1')
+(& 'C:\Users\farpras\.local\bin\mise.exe' activate pwsh) | Out-String | Invoke-Expression
+
 # PUT AT THE END
 # Invoke-Expression (&starship init powershell)
 
-# Custom PowerShell Prompt 
-. (Join-Path $PSScriptRoot 'Prompt.ps1')
