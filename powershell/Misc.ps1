@@ -122,3 +122,8 @@ function link {
         Write-Error "Failed to create symbolic link. Did you remember to run PowerShell as Administrator?"
     }
 }
+
+# scrcpy cam flip270
+function sccamf {
+    scrcpy --video-source=camera --display-orientation=flip270
+}
