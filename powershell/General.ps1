@@ -39,7 +39,7 @@ function ff {
     fastfetch
 }
 
-function gfh {
+function fhg {
     param(
         [Parameter(Mandatory=$true)]
         [string]$Path
