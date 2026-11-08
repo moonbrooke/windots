@@ -46,3 +46,24 @@ function gfh {
     )
     Get-FileHash $Path
 }
+
+function fhc {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Path,
+        [Parameter(Mandatory=$true)]
+        [string]$HashToCompare
+    )
+    $ActualHash = (Get-FileHash $Path).Hash
+    if ($ActualHash -ieq $HashToCompare.Trim()) {
+        Write-Host "👌 Hash match!" -ForegroundColor Green
+        Write-Host "Hash: " -NoNewline
+        Write-Host "$HashToCompare" -ForegroundColor Green -NoNewline
+    } else {
+        Write-Host "💀 Hash mismatch!" -ForegroundColor Red
+        Write-Host "Actual:   " -NoNewline
+        Write-Host "$ActualHash" -ForegroundColor Green
+        Write-Host "Expected: " -NoNewline
+        Write-Host "$HashToCompare" -ForegroundColor Red
+    }
+}
