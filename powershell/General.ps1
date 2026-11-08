@@ -54,8 +54,9 @@ function fhc {
         [Parameter(Mandatory=$true)]
         [string]$HashToCompare
     )
-    $ActualHash = (Get-FileHash $Path).Hash
-    if ($ActualHash -ieq $HashToCompare.Trim()) {
+    $ActualHash = (Get-FileHash $Path).Hash.ToLower()
+    $HashToCompare = $HashToCompare.Trim().ToLower()
+    if ($ActualHash -ieq $HashToCompare) {
         Write-Host "👌 Hash match!" -ForegroundColor Green
         Write-Host "Hash: " -NoNewline
         Write-Host "$HashToCompare" -ForegroundColor Green -NoNewline
