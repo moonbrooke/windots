@@ -4,6 +4,11 @@ Requirements:
 - [WINQ-EMU](https://github.com/cmspam/winq-emu)
 - [WINQ-EMU Patch](https://github.com/Chainfire/omarchy-windows-hyperv-gpu)
 
+Patching:
+```bash
+C:\WINQ-EMU\patch\whpx_nested_patch.exe <qemu-system-x86_64[w].exe>
+```
+
 Examples of `.bat` scripts to launch [WINQ-EMU](https://github.com/cmspam/winq-emu) VM. The examples have 6 CPUs with 4GB of RAM setup launched via patched qemu binary.
 
 - `void-install.bat`: Run this to install new guest distro.
