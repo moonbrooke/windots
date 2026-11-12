@@ -26,7 +26,7 @@
 			</path>
 		</exclude>
 		<simple>
-			<name>(.mp4|.m4v|.mov|.avi|.flv|.ts|.m3u8|.mkv|.webm|.vob|.ogv|.gifv|.mts|.wmv|.3gp|.mpg|.mpeg|.f4v)</name>
+			<name>(.mp4|.m4v|.mov|.avi|.flv|.ts|.m3u8|.mkv|.webm|.vob|.ogv|.gifv|.mts|.wmv|.3gp|.mpg|.mpeg|.f4v|.m2ts|.asf|.qt|.rm|.rmvb|.dv|.m4p|.m2v|.mxf|.divx|.xvid|.f4p|.f4a|.f4b|.mk3d|.ogx|.ogm|.ts|.tsv|.evo|.dat|.vro|.amv|.svi|.viv|.nsv|.roq|.yuv)</name>
 			<contains />
 			<flags>0x80030</flags>
 			<date_type>0</date_type>
